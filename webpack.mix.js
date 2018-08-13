@@ -16,3 +16,4 @@ mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/responsive.scss', 'public/css')
    .sourceMaps()
    .browserSync('laravel-ecommerce-example.test');
+mix.copy('node_modules/flag-icon-css', 'public/css/flag-icon-css');
