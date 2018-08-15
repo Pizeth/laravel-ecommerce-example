@@ -1837,7 +1837,9 @@ body[dir="ltr"] .breadcum-area {
   position: relative;
 }
 
-.banner-single .panel .fa {
+.banner-single .panel .fa,  
+.banner-single .panel .far, 
+.banner-single .panel .fas {
   float: left;
   font-size: 35px;
   color: #ea2f4c;
@@ -3770,7 +3772,9 @@ body[dir="ltr"] .breadcum-area {
   margin-bottom: 10px;
 }
 
-.footer-content .single-footer .contact-list li .fa {
+.footer-content .single-footer .contact-list li .fa,
+.footer-content .single-footer .contact-list li .far,
+.footer-content .single-footer .contact-list li .fas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

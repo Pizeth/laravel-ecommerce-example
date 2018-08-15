@@ -108,7 +108,7 @@
                             <strong>E</strong>COMMERCE
                         </a>
                     </div>
-                    <div class="col-12 col-sm-7 col-md-8 col-lg-6 px-0">
+                    <!-- <div class="col-12 col-sm-7 col-md-8 col-lg-6 px-0">
                         <form class="form-inline" action="http://demo.laravelcommerce.com/shop" method="get">
                             <div class="search-categories">
                                 <select id="category_id" name="category" style="display: none;">
@@ -154,7 +154,53 @@
                                 <button type="submit" class="btn btn-secondary"><i class="fa fa-search" aria-hidden="true"></i></button>
                             </div>
                         </form>
+                    </div> -->
+
+                    <div class="col-12 col-sm-7 col-md-8 col-lg-6 px-0">      
+                        <form class="form-inline" action="http://demo.laravelcommerce.com/shop" method="get">
+                            <div class="search-categories">
+                                <select id="category_id" name="category">
+                                    <option value="all">All Categories</option>     
+                                    <option value="men-s-clothing" >Men&#039;s Clothing</option>
+                                    <option value="men-polo-shirts" >--Men Polo shirts</option>
+                                    <option value="men-polo-shirts-1" >--Men Polo shirts</option>
+                                    <option value="men-jeans" >--Men Jeans</option>
+                                    <option value="men-shoes" >--Men Shoes</option>
+                                    <option value="sunglasses-glasses" >--Sunglasses &amp; Glasses</option>                                                         	
+                                    <option value="women-s-clothing" >Women&#039;s Clothing</option>
+                                    <option value="women-dresses" >--Women Dresses</option>
+                                    <option value="women-shirts-tops" >--Women Shirts &amp; Tops</option>
+                                    <option value="women-jeans" >--Women Jeans</option>
+                                    <option value="women-hand-bags" >--Women Hand Bags</option>
+                                    <option value="boy-s-clothing" >Boy&#039;s Clothing</option>
+                                    <option value="boy-polo-shirts" >--Boy Polo shirts</option>
+                                    <option value="boy-casual-shirts" >--Boy Casual Shirts</option>
+                                    <option value="boy-pants-jeans" >--Boy Pants &amp; Jeans</option>
+                                    <option value="boy-shoes" >--Boy Shoes</option>
+                                    <option value="girl-s-clothing" >Girl&#039;s Clothing</option>
+                                    <option value="dresses-rompers" >--Dresses &amp; Rompers</option>
+                                    <option value="shorts-skirts" >--Shorts &amp; Skirts</option>
+                                    <option value="sweaters" >--Sweaters</option>
+                                    <option value="baby-mother" >Baby &amp; Mother</option>
+                                    <option value="new-born" >--New Born</option>
+                                    <option value="baby-dresses" >--Baby Dresses</option>
+                                    <option value="baby-blankets-swaddles" >--Baby Blankets &amp; Swaddles</option>
+                                    <option value="household-merchandises" >Household Merchandises</option>
+                                    <option value="bedding-collections" >--Bedding Collections</option>
+                                    <option value="throws-pillows" >--Throws &amp; Pillows</option>
+                                    <option value="bath-robes" >--Bath Robes</option>
+                                    <option value="health-beauty-hair" >Health &amp; Beauty, Hair</option>
+                                    <option value="automobiles-motorcycles" >Automobiles &amp; Motorcycles</option>
+                                    <option value="jewelry-watches" >Jewelry &amp; Watches</option>
+                                    <option value="cellphones-accessories" >Cellphones &amp; Accessories</option>
+                                    <option value="computer-office-security" >Computer, Office, Security</option>
+                                </select>
+                                <input type="search"  name="search" placeholder="Search entire store here..." value="" aria-label="Search">
+                                <button type="submit" class="btn btn-secondary"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </div>
+                        </form>
                     </div>
+
                     <div class="col-12 col-sm-5 col-md-4 col-lg-3 spaceleft-0">
                         <ul class="top-right-list">
                             <li class="wishlist-header">
@@ -596,7 +642,6 @@
             </div>
         </div>
     </header>
-
     <section class="carousel-content">
         <div class="container">
             <div class="row">
@@ -861,7 +906,6 @@
         </div>
     </section>
     <!-- ./end of header -->
-
     <section class="site-content">
         <div class="container">
             <div class="group-banners en">
@@ -903,17 +947,19 @@
                 </div>
             </div>
         <!-- dynamic content -->
-        <div class="products-area">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="nav nav-pills" role="tablist">
-                        <a class="nav-link nav-item nav-index active" href="http://demo.laravelcommerce.com/#featured" id="featured-tab" data-toggle="pill" role="tab" aria-controls="featured" aria-selected="true">Top Sales</a>
-                        <a class="nav-link nav-item nav-index" href="http://demo.laravelcommerce.com/#special" id="special-tab" data-toggle="pill" role="tab" aria-controls="special" aria-selected="false">Special</a>
-                        <a class="nav-link nav-item nav-index" href="http://demo.laravelcommerce.com/#liked" id="liked-tab" data-toggle="pill" role="tab" aria-controls="liked" aria-selected="false">Most Liked</a>
-                    </div>
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                        <div class="overlay" style="display:none;"><img src="{{ asset('img/ecom/loader.gif') }}"></div>
+            <div class="products-area">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="nav nav-pills" role="tablist">
+                            <a class="nav-link nav-item nav-index active" href="http://demo.laravelcommerce.com/#featured" id="featured-tab" data-toggle="pill" role="tab" aria-controls="featured" aria-selected="true">Top Sales</a>
+                            <a class="nav-link nav-item nav-index" href="http://demo.laravelcommerce.com/#special" id="special-tab" data-toggle="pill" role="tab" aria-controls="special" aria-selected="false">Special</a>
+                            <a class="nav-link nav-item nav-index" href="http://demo.laravelcommerce.com/#liked" id="liked-tab" data-toggle="pill" role="tab" aria-controls="liked" aria-selected="false">Most Liked</a>
+                        </div>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="overlay" style="display:none;">
+                                <img src="{{ asset('img/ecom/loader.gif') }}">
+                            </div>
                             <div role="tabpanel" class="tab-pane fade show active" id="featured" aria-labelledby="featured-tab">
                                 <div id="owl_featured" class="owl-carousel owl_featured owl-loaded owl-drag">
                                     <div class="owl-stage-outer">
@@ -924,11 +970,11 @@
                                                         <div class="thumb"> 
                                                             <img class="img-fluid" src="{{ asset('img/ecom/1502174889.pPOLO2-26314766_standard_v400.jpg') }}" alt="CLASSIC FIT SOFT-TOUCH POLO">
                                                         </div>
-						                                <span class="tag text-center">Men's Clothing</span>
+                                                        <span class="tag text-center">Men's Clothing</span>
                                                         <h2 class="title text-center">CLASSIC FIT SOFT-TOUCH POLO</h2>
                                                         <div class="price text-center">$85</div>
                                                         <div class="product-hover">
-                     	                                    <div class="icons">
+                                                            <div class="icons">
                                                                 <div class="icon-liked">
                                                                     <span products_id="1" class="fa  fa-heart-o  is_liked">
                                                                         <span class="badge badge-secondary">8</span>
@@ -1248,7 +1294,7 @@
                                             <div class="owl-item">
                                                 <div class="product">
                                                     <article>
-                  	                                    <div class="thumb">
+                                                        <div class="thumb">
                                                             <img class="img-fluid" src="{{ asset('img/ecom/1502366586.pPOLO2-25834797_standard_v400.jpg') }}" alt="FLAG COMBED COTTON SWEATER">
                                                         </div>
                                                         <span class="discount-tag">20%</span>                     
@@ -1564,7 +1610,6 @@
                                                     </article>
                                                 </div>
                                             </div>
-                
                                             <div class="owl-item">
                                                 <div class="product last-product">
                                                     <article>
@@ -1588,574 +1633,2712 @@
                                     </div>
                                 </div>
                             </div>
-
-            <div role="tabpanel" class="tab-pane fade" id="liked" aria-labelledby="liked-tab">
-              <div id="owl_liked" class="owl-carousel owl-loaded owl-drag">
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s;"><div class="owl-item"><div class="product">
-                  <article>
-                  	<div class="thumb"><img class="img-fluid" src="{{ asset('img/ecom/1502174889.pPOLO2-26314766_standard_v400.jpg') }}" alt="CLASSIC FIT SOFT-TOUCH POLO"></div>
-                                        <span class="tag text-center">
-                    	Men's Clothing                    </span>
-
-                    <h2 class="title text-center">CLASSIC FIT SOFT-TOUCH POLO</h2>
-
-                    <div class="price text-center">
-                                            	$85
-
-                    </div>
-
-                    <div class="product-hover">
-                     	<div class="icons">
-                        	<div class="icon-liked">
-
-                            	<span products_id="1" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">8</span></span>
+                            <div role="tabpanel" class="tab-pane fade" id="liked" aria-labelledby="liked-tab">
+                                <div id="owl_liked" class="owl-carousel owl-loaded owl-drag">
+                                    <div class="owl-stage-outer">
+                                        <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s;">
+                                            <div class="owl-item">
+                                                <div class="product">
+                                                    <article>
+                                                        <div class="thumb">
+                                                            <img class="img-fluid" src="{{ asset('img/ecom/1502174889.pPOLO2-26314766_standard_v400.jpg') }}" alt="CLASSIC FIT SOFT-TOUCH POLO">
+                                                        </div>
+                                                        <span class="tag text-center">Men's Clothing</span>
+                                                        <h2 class="title text-center">CLASSIC FIT SOFT-TOUCH POLO</h2>
+                                                        <div class="price text-center">$85</div>
+                                                        <div class="product-hover">
+                                                            <div class="icons">
+                                                                <div class="icon-liked">
+                                                                    <span products_id="1" class="fa  fa-heart-o  is_liked">
+                                                                        <span class="badge badge-secondary">8</span>
+                                                                    </span>
+                                                                </div>
+                                                                <a href="http://demo.laravelcommerce.com/product-detail/classic-fit-soft-touch-polo" class="fa fa-eye"></a>
+                                                            </div>
+                                                            <div class="buttons">
+                                                                <button class="btn btn-block btn-secondary cart" products_id="1">Add to Cart</button>
+                                                            </div>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item">
+                                                <div class="product">
+                                                    <article>
+                                                        <div class="thumb">
+                                                            <img class="img-fluid" src="{{ asset('img/ecom/1502366342.pPOLO2-26090785_standard_v400.jpg') }}" alt="CABLE-KNIT CASHMERE SWEATER">
+                                                        </div>
+                                                        <span class="tag text-center">Girl's Clothing</span>
+                                                        <h2 class="title text-center">CABLE-KNIT CASHMERE SWEATER</h2>
+                                                        <div class="price text-center">$195 </div>
+                                                        <div class="product-hover">
+                                                            <div class="icons">
+                                                                <div class="icon-liked">
+                                                                    <span products_id="78" class="fa  fa-heart-o  is_liked">
+                                                                        <span class="badge badge-secondary">8</span>
+                                                                    </span>
+                                                                </div>
+                                                                <a href="http://demo.laravelcommerce.com/product-detail/cable-knit-cashmere-sweater" class="fa fa-eye"></a>
+                                                            </div>
+                                                            <div class="buttons">
+                                                                <button class="btn btn-block btn-secondary cart" products_id="78">Add to Cart</button>
+                                                            </div>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item">
+                                                <div class="product">
+                                                    <article>
+                                                        <div class="thumb">
+                                                            <img class="img-fluid" src="{{ asset('img/ecom/1502365515.pPOLO2-26091862_alternate1_v400.jpg') }}" alt="FLORAL SKIRT">
+                                                        </div>
+                                                        <span class="tag text-center">Girl's Clothing</span>
+                                                        <h2 class="title text-center">FLORAL SKIRT</h2>
+                                                        <div class="price text-center">$49.5</div>
+                                                        <div class="product-hover">
+                                                            <div class="icons">
+                                                                <div class="icon-liked">
+                                                                    <span products_id="76" class="fa  fa-heart-o  is_liked">
+                                                                        <span class="badge badge-secondary">7</span>
+                                                                    </span>
+                                                                </div>
+                                                                <a href="http://demo.laravelcommerce.com/product-detail/floral-skirt" class="fa fa-eye"></a>
+                                                            </div>
+                                                            <div class="buttons">
+                                                                <button class="btn btn-block btn-secondary cart" products_id="76">Add to Cart</button>
+                                                            </div>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item">
+                                                <div class="product">
+                                                    <article>
+                                                        <div class="thumb">
+                                                            <img class="img-fluid" src="{{ asset('img/ecom/1502190187.pPOLO2-26315541_standard_v400.jpg') }}" alt="HAMPTON STRAIGHT FIT JEAN">
+                                                        </div>
+                                                        <span class="tag text-center">Men's Clothing</span>
+                                                        <h2 class="title text-center">HAMPTON STRAIGHT FIT JEAN</h2>
+                                                        <div class="price text-center">$125</div>
+                                                        <div class="product-hover">
+                                                            <div class="icons">
+                                                                <div class="icon-liked">
+                                                                    <span products_id="13" class="fa  fa-heart-o  is_liked">
+                                                                        <span class="badge badge-secondary">6</span>
+                                                                    </span>
+                                                                </div>
+                                                                <a href="http://demo.laravelcommerce.com/product-detail/hampton-straight-fit-jean" class="fa fa-eye"></a>
+                                                            </div>
+                                                            <div class="buttons">
+                                                                <button class="btn btn-block btn-secondary cart" products_id="13">Add to Cart</button>
+                                                            </div>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item">
+                                                <div class="product">
+                                                    <article>
+                                                        <div class="thumb">
+                                                            <img class="img-fluid" src="{{ asset('img/ecom/1502191568.pPOLO2-26256404_standard_v400.jpg') }}" alt="DILLIAN II SUEDE CHELSEA BOOT">
+                                                        </div>
+                                                        <span class="tag text-center">Men's Clothing</span>
+                                                        <h2 class="title text-center">DILLIAN II SUEDE CHELSEA BOOT</h2>
+                                                        <div class="price text-center">$275</div>
+                                                        <div class="product-hover">
+                                                            <div class="icons">
+                                                                <div class="icon-liked">
+                                                                    <span products_id="17" class="fa  fa-heart-o  is_liked">
+                                                                        <span class="badge badge-secondary">6</span>
+                                                                    </span>
+                                                                </div>
+                                                                <a href="http://demo.laravelcommerce.com/product-detail/dillian-ii-suede-chelsea-boot" class="fa fa-eye"></a>
+                                                            </div>
+                                                            <div class="buttons">
+                                                                <button class="btn btn-block btn-secondary cart" products_id="17">Add to Cart</button>
+                                                            </div>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item">
+                                                <div class="product">
+                                                    <article>
+                                                        <div class="thumb">
+                                                            <img class="img-fluid" src="{{ asset('img/ecom/1502366686.pPOLO2-25207761_standard_v400.jpg') }}" alt="RUFFLED COTTON CARDIGAN">
+                                                        </div>
+                                                        <span class="tag text-center">Girl's Clothing</span>
+                                                        <h2 class="title text-center">RUFFLED COTTON CARDIGAN</h2>
+                                                        <div class="price text-center">$49.5</div>
+                                                        <div class="product-hover">
+                                                            <div class="icons">
+                                                                <div class="icon-liked">
+                                                                    <span products_id="81" class="fa  fa-heart-o  is_liked">
+                                                                        <span class="badge badge-secondary">6</span>
+                                                                    </span>
+                                                                </div>
+                                                                <a href="http://demo.laravelcommerce.com/product-detail/ruffled-cotton-cardigan" class="fa fa-eye"></a>
+                                                            </div>
+                                                            <div class="buttons">
+                                                                <button class="btn btn-block btn-secondary cart" products_id="81">Add to Cart</button>
+                                                            </div>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item">
+                                                <div class="product">
+                                                    <article>
+                                                        <div class="thumb">
+                                                            <img class="img-fluid" src="{{ asset('img/ecom/1502114036.pPOLO2-26316336_standard_v400.jpg') }}" alt="HAMPTON CLASSIC FIT SHIRT">
+                                                        </div>
+                                                        <span class="tag text-center">Men's Clothing</span>
+                                                        <h2 class="title text-center">HAMPTON CLASSIC FIT SHIRT</h2>
+                                                        <div class="price text-center">$98.5</div>
+                                                        <div class="product-hover">
+                                                            <div class="icons">
+                                                                <div class="icon-liked">
+                                                                    <span products_id="2" class="fa  fa-heart-o  is_liked">
+                                                                        <span class="badge badge-secondary">5</span>
+                                                                    </span>
+                                                                </div>
+                                                                <a href="http://demo.laravelcommerce.com/product-detail/hampton-classic-fit-shirt" class="fa fa-eye"></a>
+                                                            </div>
+                                                            <div class="buttons">
+                                                                <button class="btn btn-block btn-secondary cart" products_id="2">Add to Cart</button>
+                                                            </div>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item">
+                                                <div class="product">
+                                                    <article>
+                                                        <div class="thumb">
+                                                            <img class="img-fluid" src="{{ asset('img/ecom/1502181584.pPOLO2-26008953_standard_v400.jpg') }}" alt="STANDARD FIT COTTON POPOVER">
+                                                        </div>
+                                                        <span class="tag text-center">Men's Clothing</span>
+                                                        <h2 class="title text-center">STANDARD FIT COTTON POPOVER</h2>
+                                                        <div class="price text-center">$125.5</div>
+                                                        <div class="product-hover">
+                                                            <div class="icons">
+                                                                <div class="icon-liked">
+                                                                    <span products_id="8" class="fa  fa-heart-o  is_liked">
+                                                                        <span class="badge badge-secondary">5</span>
+                                                                    </span>
+                                                                </div>
+                                                                <a href="http://demo.laravelcommerce.com/product-detail/standard-fit-cotton-popover" class="fa fa-eye"></a>
+                                                            </div>
+                                                            <div class="buttons">
+                                                                <button class="btn btn-block btn-secondary cart" products_id="8">Add to Cart</button>
+                                                            </div>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item">
+                                                <div class="product">
+                                                    <article>
+                                                        <div class="thumb">
+                                                            <img class="img-fluid" src="{{ asset('img/ecom/1502174364.pPOLO2-26314826_standard_v400.jpg') }}" alt="CLASSIC FIT COTTON POLO SHIRT">
+                                                        </div>
+                                                        <span class="tag text-center">Men's Clothing</span>
+                                                        <h2 class="title text-center">CLASSIC FIT COTTON POLO SHIRT</h2>
+                                                        <div class="price text-center">$85</div>
+                                                        <div class="product-hover">
+                                                            <div class="icons">
+                                                                <div class="icon-liked">
+                                                                    <span products_id="4" class="fa  fa-heart-o  is_liked">
+                                                                        <span class="badge badge-secondary">4</span>
+                                                                    </span>
+                                                                </div>
+                                                                <a href="http://demo.laravelcommerce.com/product-detail/classic-fit-cotton-polo-shirt" class="fa fa-eye"></a>
+                                                            </div>
+                                                            <div class="buttons">
+                                                                <button class="btn btn-block btn-secondary cart" products_id="4">Add to Cart</button>
+                                                            </div>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item">
+                                                <div class="product">
+                                                    <article>
+                                                        <div class="thumb">
+                                                            <img class="img-fluid" src="{{ asset('img/ecom/1502182426.pPOLO2-26008935_standard_v400.jpg') }}" alt="STANDARD FIT MADRAS POPOVER">
+                                                        </div>
+                                                        <span class="tag text-center">Men's Clothing</span>
+                                                        <h2 class="title text-center">STANDARD FIT MADRAS POPOVER</h2>
+                                                        <div class="price text-center">$89.5</div>
+                                                        <div class="product-hover">
+                                                            <div class="icons">
+                                                                <div class="icon-liked">
+                                                                    <span products_id="9" class="fa  fa-heart-o  is_liked">
+                                                                        <span class="badge badge-secondary">4</span>
+                                                                    </span>
+                                                                </div>
+                                                                <a href="http://demo.laravelcommerce.com/product-detail/standard-fit-madras-popover" class="fa fa-eye"></a>
+                                                            </div>
+                                                            <div class="buttons">
+                                                                <button class="btn btn-block btn-secondary cart" products_id="9">Add to Cart</button>
+                                                            </div>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item">
+                                                <div class="product">
+                                                    <article>
+                                                        <div class="thumb">
+                                                            <img class="img-fluid" src="{{ asset('img/ecom/1502268005.pPOLO2-25655666_standard_v400.jpg') }}" alt="STRIPED POLO DRESS &amp; BLOOMER">
+                                                        </div>
+                                                        <span class="discount-tag">37%</span>                    
+                                                        <span class="tag text-center">Baby &amp; Mother</span>
+                                                        <h2 class="title text-center">STRIPED POLO DRESS &amp; BLOOMER</h2>
+                                                        <div class="price text-center">$21.99 <span>$35</span></div>
+                                                        <div class="product-hover">
+                                                            <div class="icons">
+                                                                <div class="icon-liked">
+                                                                    <span products_id="43" class="fa  fa-heart-o  is_liked">
+                                                                        <span class="badge badge-secondary">4</span>
+                                                                    </span>
+                                                                </div>
+                                                                <a href="http://demo.laravelcommerce.com/product-detail/striped-polo-dress-bloomer" class="fa fa-eye"></a>
+                                                            </div>
+                                                            <div class="buttons">
+                                                                <button class="btn btn-block btn-secondary cart" products_id="43">Add to Cart</button>
+                                                            </div>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item">
+                                                <div class="product">
+                                                    <article>
+                                                        <div class="thumb">
+                                                            <img class="img-fluid" src="{{ asset('img/ecom/1502363119.pPOLO2-25464682_standard_v400.jpg') }}" alt="PROPELL II SNEAKER">
+                                                        </div>
+                                                        <span class="discount-tag">46%</span>                    
+                                                        <span class="tag text-center">Boy's Clothing</span>
+                                                        <h2 class="title text-center">PROPELL II SNEAKER</h2>
+                                                        <div class="price text-center">$23.99 <span>$45</span></div>
+                                                        <div class="product-hover">
+                                                            <div class="icons">
+                                                                <div class="icon-liked">
+                                                                    <span products_id="70" class="fa  fa-heart-o  is_liked">
+                                                                        <span class="badge badge-secondary">4</span>
+                                                                    </span>
+                                                                </div>
+                                                                <a href="http://demo.laravelcommerce.com/product-detail/propell-ii-sneaker" class="fa fa-eye"></a>
+                                                            </div>
+                                                            <div class="buttons">
+                                                                <button class="btn btn-block btn-secondary cart" products_id="70">Add to Cart</button>
+                                                            </div>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item">
+                                                <div class="product last-product">
+                                                <article>
+                                                    <a href="http://demo.laravelcommerce.com/shop?type=mostliked" class="buttons">
+                                                        <span class="fa fa-angle-right"></span>
+                                                        <span class="btn btn-secondary">View All</span>
+                                                    </a>
+                                                </article>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-nav">
+                                        <div class="owl-prev disabled"><i class="fa fa-angle-left"></i></div>
+                                        <div class="owl-next"><i class="fa fa-angle-right"></i></div>
+                                    </div>
+                                    <div class="owl-dots">
+                                        <div class="owl-dot active"><span></span></div>
+                                        <div class="owl-dot"><span></span></div>
+                                        <div class="owl-dot"><span></span></div>
+                                    </div>
+                                </div>
                             </div>
-
-                            <a href="http://demo.laravelcommerce.com/product-detail/classic-fit-soft-touch-polo" class="fa fa-eye"></a>
                         </div>
-
-                        <div class="buttons">
-                        	                                <button class="btn btn-block btn-secondary cart" products_id="1">Add to Cart</button>
-                                                    </div>
-                     </div>
-
-					</article>
-                </div></div><div class="owl-item"><div class="product">
-                  <article>
-                  	<div class="thumb"><img class="img-fluid" src="{{ asset('img/ecom/1502366342.pPOLO2-26090785_standard_v400.jpg') }}" alt="CABLE-KNIT CASHMERE SWEATER"></div>
-                                        <span class="tag text-center">
-                    	Girl's Clothing                    </span>
-
-                    <h2 class="title text-center">CABLE-KNIT CASHMERE SWEATER</h2>
-
-                    <div class="price text-center">
-                                            	$195
-
                     </div>
-
-                    <div class="product-hover">
-                     	<div class="icons">
-                        	<div class="icon-liked">
-
-                            	<span products_id="78" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">8</span></span>
-                            </div>
-
-                            <a href="http://demo.laravelcommerce.com/product-detail/cable-knit-cashmere-sweater" class="fa fa-eye"></a>
-                        </div>
-
-                        <div class="buttons">
-                        	                                <button class="btn btn-block btn-secondary cart" products_id="78">Add to Cart</button>
-                                                    </div>
-                     </div>
-
-					</article>
-                </div></div><div class="owl-item"><div class="product">
-                  <article>
-                  	<div class="thumb"><img class="img-fluid" src="{{ asset('img/ecom/1502365515.pPOLO2-26091862_alternate1_v400.jpg') }}" alt="FLORAL SKIRT"></div>
-                                        <span class="tag text-center">
-                    	Girl's Clothing                    </span>
-
-                    <h2 class="title text-center">FLORAL SKIRT</h2>
-
-                    <div class="price text-center">
-                                            	$49.5
-
-                    </div>
-
-                    <div class="product-hover">
-                     	<div class="icons">
-                        	<div class="icon-liked">
-
-                            	<span products_id="76" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">7</span></span>
-                            </div>
-
-                            <a href="http://demo.laravelcommerce.com/product-detail/floral-skirt" class="fa fa-eye"></a>
-                        </div>
-
-                        <div class="buttons">
-                        	                                <button class="btn btn-block btn-secondary cart" products_id="76">Add to Cart</button>
-                                                    </div>
-                     </div>
-
-					</article>
-                </div></div><div class="owl-item"><div class="product">
-                  <article>
-                  	<div class="thumb"><img class="img-fluid" src="{{ asset('img/ecom/1502190187.pPOLO2-26315541_standard_v400.jpg') }}" alt="HAMPTON STRAIGHT FIT JEAN"></div>
-                                        <span class="tag text-center">
-                    	Men's Clothing                    </span>
-
-                    <h2 class="title text-center">HAMPTON STRAIGHT FIT JEAN</h2>
-
-                    <div class="price text-center">
-                                            	$125
-
-                    </div>
-
-                    <div class="product-hover">
-                     	<div class="icons">
-                        	<div class="icon-liked">
-
-                            	<span products_id="13" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">6</span></span>
-                            </div>
-
-                            <a href="http://demo.laravelcommerce.com/product-detail/hampton-straight-fit-jean" class="fa fa-eye"></a>
-                        </div>
-
-                        <div class="buttons">
-                        	                                <button class="btn btn-block btn-secondary cart" products_id="13">Add to Cart</button>
-                                                    </div>
-                     </div>
-
-					</article>
-                </div></div><div class="owl-item"><div class="product">
-                  <article>
-                  	<div class="thumb"><img class="img-fluid" src="{{ asset('img/ecom/1502191568.pPOLO2-26256404_standard_v400.jpg') }}" alt="DILLIAN II SUEDE CHELSEA BOOT"></div>
-                                        <span class="tag text-center">
-                    	Men's Clothing                    </span>
-
-                    <h2 class="title text-center">DILLIAN II SUEDE CHELSEA BOOT</h2>
-
-                    <div class="price text-center">
-                                            	$275
-
-                    </div>
-
-                    <div class="product-hover">
-                     	<div class="icons">
-                        	<div class="icon-liked">
-
-                            	<span products_id="17" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">6</span></span>
-                            </div>
-
-                            <a href="http://demo.laravelcommerce.com/product-detail/dillian-ii-suede-chelsea-boot" class="fa fa-eye"></a>
-                        </div>
-
-                        <div class="buttons">
-                        	                                <button class="btn btn-block btn-secondary cart" products_id="17">Add to Cart</button>
-                                                    </div>
-                     </div>
-
-					</article>
-                </div></div><div class="owl-item"><div class="product">
-                  <article>
-                  	<div class="thumb"><img class="img-fluid" src="{{ asset('img/ecom/1502366686.pPOLO2-25207761_standard_v400.jpg') }}" alt="RUFFLED COTTON CARDIGAN"></div>
-                                        <span class="tag text-center">
-                    	Girl's Clothing                    </span>
-
-                    <h2 class="title text-center">RUFFLED COTTON CARDIGAN</h2>
-
-                    <div class="price text-center">
-                                            	$49.5
-
-                    </div>
-
-                    <div class="product-hover">
-                     	<div class="icons">
-                        	<div class="icon-liked">
-
-                            	<span products_id="81" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">6</span></span>
-                            </div>
-
-                            <a href="http://demo.laravelcommerce.com/product-detail/ruffled-cotton-cardigan" class="fa fa-eye"></a>
-                        </div>
-
-                        <div class="buttons">
-                        	                                <button class="btn btn-block btn-secondary cart" products_id="81">Add to Cart</button>
-                                                    </div>
-                     </div>
-
-					</article>
-                </div></div><div class="owl-item"><div class="product">
-                  <article>
-                  	<div class="thumb"><img class="img-fluid" src="{{ asset('img/ecom/1502114036.pPOLO2-26316336_standard_v400.jpg') }}" alt="HAMPTON CLASSIC FIT SHIRT"></div>
-                                        <span class="tag text-center">
-                    	Men's Clothing                    </span>
-
-                    <h2 class="title text-center">HAMPTON CLASSIC FIT SHIRT</h2>
-
-                    <div class="price text-center">
-                                            	$98.5
-
-                    </div>
-
-                    <div class="product-hover">
-                     	<div class="icons">
-                        	<div class="icon-liked">
-
-                            	<span products_id="2" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">5</span></span>
-                            </div>
-
-                            <a href="http://demo.laravelcommerce.com/product-detail/hampton-classic-fit-shirt" class="fa fa-eye"></a>
-                        </div>
-
-                        <div class="buttons">
-                        	                                <button class="btn btn-block btn-secondary cart" products_id="2">Add to Cart</button>
-                                                    </div>
-                     </div>
-
-					</article>
-                </div></div><div class="owl-item"><div class="product">
-                  <article>
-                  	<div class="thumb"><img class="img-fluid" src="{{ asset('img/ecom/1502181584.pPOLO2-26008953_standard_v400.jpg') }}" alt="STANDARD FIT COTTON POPOVER"></div>
-                                        <span class="tag text-center">
-                    	Men's Clothing                    </span>
-
-                    <h2 class="title text-center">STANDARD FIT COTTON POPOVER</h2>
-
-                    <div class="price text-center">
-                                            	$125.5
-
-                    </div>
-
-                    <div class="product-hover">
-                     	<div class="icons">
-                        	<div class="icon-liked">
-
-                            	<span products_id="8" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">5</span></span>
-                            </div>
-
-                            <a href="http://demo.laravelcommerce.com/product-detail/standard-fit-cotton-popover" class="fa fa-eye"></a>
-                        </div>
-
-                        <div class="buttons">
-                        	                                <button class="btn btn-block btn-secondary cart" products_id="8">Add to Cart</button>
-                                                    </div>
-                     </div>
-
-					</article>
-                </div></div><div class="owl-item"><div class="product">
-                  <article>
-                  	<div class="thumb"><img class="img-fluid" src="{{ asset('img/ecom/1502174364.pPOLO2-26314826_standard_v400.jpg') }}" alt="CLASSIC FIT COTTON POLO SHIRT"></div>
-                                        <span class="tag text-center">
-                    	Men's Clothing                    </span>
-
-                    <h2 class="title text-center">CLASSIC FIT COTTON POLO SHIRT</h2>
-
-                    <div class="price text-center">
-                                            	$85
-
-                    </div>
-
-                    <div class="product-hover">
-                     	<div class="icons">
-                        	<div class="icon-liked">
-
-                            	<span products_id="4" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">4</span></span>
-                            </div>
-
-                            <a href="http://demo.laravelcommerce.com/product-detail/classic-fit-cotton-polo-shirt" class="fa fa-eye"></a>
-                        </div>
-
-                        <div class="buttons">
-                        	                                <button class="btn btn-block btn-secondary cart" products_id="4">Add to Cart</button>
-                                                    </div>
-                     </div>
-
-					</article>
-                </div></div><div class="owl-item"><div class="product">
-                  <article>
-                  	<div class="thumb"><img class="img-fluid" src="{{ asset('img/ecom/1502182426.pPOLO2-26008935_standard_v400.jpg') }}" alt="STANDARD FIT MADRAS POPOVER"></div>
-                                        <span class="tag text-center">
-                    	Men's Clothing                    </span>
-
-                    <h2 class="title text-center">STANDARD FIT MADRAS POPOVER</h2>
-
-                    <div class="price text-center">
-                                            	$89.5
-
-                    </div>
-
-                    <div class="product-hover">
-                     	<div class="icons">
-                        	<div class="icon-liked">
-
-                            	<span products_id="9" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">4</span></span>
-                            </div>
-
-                            <a href="http://demo.laravelcommerce.com/product-detail/standard-fit-madras-popover" class="fa fa-eye"></a>
-                        </div>
-
-                        <div class="buttons">
-                        	                                <button class="btn btn-block btn-secondary cart" products_id="9">Add to Cart</button>
-                                                    </div>
-                     </div>
-
-					</article>
-                </div></div><div class="owl-item"><div class="product">
-                  <article>
-                  	<div class="thumb"><img class="img-fluid" src="{{ asset('img/ecom/1502268005.pPOLO2-25655666_standard_v400.jpg') }}" alt="STRIPED POLO DRESS &amp; BLOOMER"></div>
-                    <span class="discount-tag">37%</span>                    <span class="tag text-center">
-                    	Baby &amp; Mother                    </span>
-
-                    <h2 class="title text-center">STRIPED POLO DRESS &amp; BLOOMER</h2>
-
-                    <div class="price text-center">
-                                            	$21.99 <span>$35</span>
-                    </div>
-
-                    <div class="product-hover">
-                     	<div class="icons">
-                        	<div class="icon-liked">
-
-                            	<span products_id="43" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">4</span></span>
-                            </div>
-
-                            <a href="http://demo.laravelcommerce.com/product-detail/striped-polo-dress-bloomer" class="fa fa-eye"></a>
-                        </div>
-
-                        <div class="buttons">
-                        	                                <button class="btn btn-block btn-secondary cart" products_id="43">Add to Cart</button>
-                                                    </div>
-                     </div>
-
-					</article>
-                </div></div><div class="owl-item"><div class="product">
-                  <article>
-                  	<div class="thumb"><img class="img-fluid" src="{{ asset('img/ecom/1502363119.pPOLO2-25464682_standard_v400.jpg') }}" alt="PROPELL II SNEAKER"></div>
-                    <span class="discount-tag">46%</span>                    <span class="tag text-center">
-                    	Boy's Clothing                    </span>
-
-                    <h2 class="title text-center">PROPELL II SNEAKER</h2>
-
-                    <div class="price text-center">
-                                            	$23.99 <span>$45</span>
-                    </div>
-
-                    <div class="product-hover">
-                     	<div class="icons">
-                        	<div class="icon-liked">
-
-                            	<span products_id="70" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">4</span></span>
-                            </div>
-
-                            <a href="http://demo.laravelcommerce.com/product-detail/propell-ii-sneaker" class="fa fa-eye"></a>
-                        </div>
-
-                        <div class="buttons">
-                        	                                <button class="btn btn-block btn-secondary cart" products_id="70">Add to Cart</button>
-                                                    </div>
-                     </div>
-
-					</article>
-                </div></div><div class="owl-item"><div class="product last-product">
-                      <article>
-                      	<a href="http://demo.laravelcommerce.com/shop?type=mostliked" class="buttons">
-                        	<span class="fa fa-angle-right"></span>
-                        	<span class="btn btn-secondary">View All</span>
-                        </a>
-                      </article>
-                    </div></div></div></div><div class="owl-nav"><div class="owl-prev disabled"><i class="fa fa-angle-left"></i></div><div class="owl-next"><i class="fa fa-angle-right"></i></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div>
+                </div>
             </div>
-          </div>
+
+
+
+
+
+            <div class="products-area">
+                <div class="row">
+                    <div class="col-md-12">
+                    <div class="nav nav-pills" role="tablist">
+                        <a class="nav-link nav-item nav-index active" href="#featured" id="featured-tab" data-toggle="pill" role="tab" aria-controls="featured" aria-selected="true">Top Sales</a> 
+                        <a class="nav-link nav-item nav-index" href="#special" id="special-tab" data-toggle="pill" role="tab" aria-controls="special" aria-selected="false">Special</a> 
+                        <a class="nav-link nav-item nav-index" href="#liked" id="liked-tab" data-toggle="pill" role="tab" aria-controls="liked" aria-selected="false">Most Liked</a> 
+                    </div>
+                    
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="overlay" style="display:none;"><img src="http://demo.laravelcommerce.com/public/images/loader.gif"></div>
+                        <div role="tabpanel" class="tab-pane fade show active" id="featured" role="tabpanel" aria-labelledby="featured-tab">
+                        <div id="owl_featured" class="owl-carousel owl_featured"> 
+                                                            
+                            <div class="product">
+                            <article>
+                                
+                                <div class="thumb"> <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502174889.pPOLO2-26314766_standard_v400.jpg" alt="CLASSIC FIT SOFT-TOUCH POLO"></div>
+                                                            <span class="tag text-center">
+                                        Men's Clothing                        </span>
+                                    <h2 class="title text-center">CLASSIC FIT SOFT-TOUCH POLO</h2>
+                                    <div class="price text-center">
+                                                                        $85 
+                                    
+                                        
+                                    </div>
+                                    
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            
+                                            <span products_id = '1' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">8</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/classic-fit-soft-touch-polo" class="fa fa-eye"></a>
+                                    </div>
+                                    <div class="buttons">
+                                                                
+                                            <button  class="btn btn-block btn-secondary cart" products_id="1">Add to Cart</button>
+                                            
+                                                                </div>
+                                </div>
+                                
+                            </article>
+                            </div>
+                                            
+                            <div class="product">
+                            <article>
+                                
+                                <div class="thumb"> <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502181584.pPOLO2-26008953_standard_v400.jpg" alt="STANDARD FIT COTTON POPOVER"></div>
+                                                            <span class="tag text-center">
+                                        Men's Clothing                        </span>
+                                    <h2 class="title text-center">STANDARD FIT COTTON POPOVER</h2>
+                                    <div class="price text-center">
+                                                                        $125.5 
+                                    
+                                        
+                                    </div>
+                                    
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            
+                                            <span products_id = '8' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">5</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/standard-fit-cotton-popover" class="fa fa-eye"></a>
+                                    </div>
+                                    <div class="buttons">
+                                                                
+                                            <button  class="btn btn-block btn-secondary cart" products_id="8">Add to Cart</button>
+                                            
+                                                                </div>
+                                </div>
+                                
+                            </article>
+                            </div>
+                                            
+                            <div class="product">
+                            <article>
+                                
+                                <div class="thumb"> <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502190187.pPOLO2-26315541_standard_v400.jpg" alt="HAMPTON STRAIGHT FIT JEAN"></div>
+                                                            <span class="tag text-center">
+                                        Men's Clothing                        </span>
+                                    <h2 class="title text-center">HAMPTON STRAIGHT FIT JEAN</h2>
+                                    <div class="price text-center">
+                                                                        $125 
+                                    
+                                        
+                                    </div>
+                                    
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            
+                                            <span products_id = '13' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">7</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/hampton-straight-fit-jean" class="fa fa-eye"></a>
+                                    </div>
+                                    <div class="buttons">
+                                                                
+                                            <button  class="btn btn-block btn-secondary cart" products_id="13">Add to Cart</button>
+                                            
+                                                                </div>
+                                </div>
+                                
+                            </article>
+                            </div>
+                                            
+                            <div class="product">
+                            <article>
+                                
+                                <div class="thumb"> <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502174364.pPOLO2-26314826_standard_v400.jpg" alt="CLASSIC FIT COTTON POLO SHIRT"></div>
+                                                            <span class="tag text-center">
+                                        Men's Clothing                        </span>
+                                    <h2 class="title text-center">CLASSIC FIT COTTON POLO SHIRT</h2>
+                                    <div class="price text-center">
+                                                                        $85 
+                                    
+                                        
+                                    </div>
+                                    
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            
+                                            <span products_id = '4' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">4</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/classic-fit-cotton-polo-shirt" class="fa fa-eye"></a>
+                                    </div>
+                                    <div class="buttons">
+                                                                
+                                            <button  class="btn btn-block btn-secondary cart" products_id="4">Add to Cart</button>
+                                            
+                                                                </div>
+                                </div>
+                                
+                            </article>
+                            </div>
+                                            
+                            <div class="product">
+                            <article>
+                                
+                                <div class="thumb"> <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502366105.pPOLO2-26091049_alternate1_v400.jpg" alt="PLEATED MADRAS SKIRT"></div>
+                                                            <span class="tag text-center">
+                                        Girl's Clothing                        </span>
+                                    <h2 class="title text-center">PLEATED MADRAS SKIRT</h2>
+                                    <div class="price text-center">
+                                                                        $56.5 
+                                    
+                                        
+                                    </div>
+                                    
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            
+                                            <span products_id = '77' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">4</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/pleated-madras-skirt" class="fa fa-eye"></a>
+                                    </div>
+                                    <div class="buttons">
+                                                                
+                                            <button  class="btn btn-block btn-secondary cart" products_id="77">Add to Cart</button>
+                                            
+                                                                </div>
+                                </div>
+                                
+                            </article>
+                            </div>
+                                            
+                            <div class="product">
+                            <article>
+                                
+                                <div class="thumb"> <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502366686.pPOLO2-25207761_standard_v400.jpg" alt="RUFFLED COTTON CARDIGAN"></div>
+                                                            <span class="tag text-center">
+                                        Girl's Clothing                        </span>
+                                    <h2 class="title text-center">RUFFLED COTTON CARDIGAN</h2>
+                                    <div class="price text-center">
+                                                                        $49.5 
+                                    
+                                        
+                                    </div>
+                                    
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            
+                                            <span products_id = '81' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">6</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/ruffled-cotton-cardigan" class="fa fa-eye"></a>
+                                    </div>
+                                    <div class="buttons">
+                                                                
+                                            <button  class="btn btn-block btn-secondary cart" products_id="81">Add to Cart</button>
+                                            
+                                                                </div>
+                                </div>
+                                
+                            </article>
+                            </div>
+                                            
+                            <div class="product">
+                            <article>
+                                
+                                <div class="thumb"> <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502114036.pPOLO2-26316336_standard_v400.jpg" alt="HAMPTON CLASSIC FIT SHIRT"></div>
+                                                            <span class="tag text-center">
+                                        Men's Clothing                        </span>
+                                    <h2 class="title text-center">HAMPTON CLASSIC FIT SHIRT</h2>
+                                    <div class="price text-center">
+                                                                        $98.5 
+                                    
+                                        
+                                    </div>
+                                    
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            
+                                            <span products_id = '2' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">5</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/hampton-classic-fit-shirt" class="fa fa-eye"></a>
+                                    </div>
+                                    <div class="buttons">
+                                                                
+                                            <button  class="btn btn-block btn-secondary cart" products_id="2">Add to Cart</button>
+                                            
+                                                                </div>
+                                </div>
+                                
+                            </article>
+                            </div>
+                                            
+                            <div class="product">
+                            <article>
+                                
+                                <div class="thumb"> <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502176579.pPOLO2-26316348_standard_v400.jpg" alt="CUSTOM SLIM FIT COTTON SHIRT"></div>
+                                                            <span class="tag text-center">
+                                        Men's Clothing                        </span>
+                                    <h2 class="title text-center">CUSTOM SLIM FIT COTTON SHIRT</h2>
+                                    <div class="price text-center">
+                                                                        $98.5 
+                                    
+                                        
+                                    </div>
+                                    
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            
+                                            <span products_id = '5' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">3</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/custom-slim-fit-cotton-shirt" class="fa fa-eye"></a>
+                                    </div>
+                                    <div class="buttons">
+                                                                
+                                            <button  class="btn btn-block btn-secondary cart" products_id="5">Add to Cart</button>
+                                            
+                                                                </div>
+                                </div>
+                                
+                            </article>
+                            </div>
+                                            
+                            <div class="product">
+                            <article>
+                                
+                                <div class="thumb"> <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502177321.pPOLO2-26314634_standard_v400.jpg" alt="CUSTOM SLIM FIT WEATHERED POLO"></div>
+                                                            <span class="tag text-center">
+                                        Men's Clothing                        </span>
+                                    <h2 class="title text-center">CUSTOM SLIM FIT WEATHERED POLO</h2>
+                                    <div class="price text-center">
+                                                                        $89.5 
+                                    
+                                        
+                                    </div>
+                                    
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            
+                                            <span products_id = '6' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">3</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/custom-slim-fit-weathered-polo" class="fa fa-eye"></a>
+                                    </div>
+                                    <div class="buttons">
+                                                                
+                                            <button  class="btn btn-block btn-secondary cart" products_id="6">Add to Cart</button>
+                                            
+                                                                </div>
+                                </div>
+                                
+                            </article>
+                            </div>
+                                            
+                            <div class="product">
+                            <article>
+                                
+                                <div class="thumb"> <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502180946.pPOLO2-26008917_standard_v400.jpg" alt="STANDARD FIT COTTON SHIRT"></div>
+                                                            <span class="tag text-center">
+                                        Men's Clothing                        </span>
+                                    <h2 class="title text-center">STANDARD FIT COTTON SHIRT</h2>
+                                    <div class="price text-center">
+                                                                        $98.5 
+                                    
+                                        
+                                    </div>
+                                    
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            
+                                            <span products_id = '7' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">1</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/standard-fit-cotton-shirt" class="fa fa-eye"></a>
+                                    </div>
+                                    <div class="buttons">
+                                                                
+                                            <button  class="btn btn-block btn-secondary cart" products_id="7">Add to Cart</button>
+                                            
+                                                                </div>
+                                </div>
+                                
+                            </article>
+                            </div>
+                                            
+                            <div class="product">
+                            <article>
+                                
+                                <div class="thumb"> <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502182426.pPOLO2-26008935_standard_v400.jpg" alt="STANDARD FIT MADRAS POPOVER"></div>
+                                                            <span class="tag text-center">
+                                        Men's Clothing                        </span>
+                                    <h2 class="title text-center">STANDARD FIT MADRAS POPOVER</h2>
+                                    <div class="price text-center">
+                                                                        $89.5 
+                                    
+                                        
+                                    </div>
+                                    
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            
+                                            <span products_id = '9' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">4</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/standard-fit-madras-popover" class="fa fa-eye"></a>
+                                    </div>
+                                    <div class="buttons">
+                                                                
+                                            <button  class="btn btn-block btn-secondary cart" products_id="9">Add to Cart</button>
+                                            
+                                                                </div>
+                                </div>
+                                
+                            </article>
+                            </div>
+                                            
+                            <div class="product">
+                            <article>
+                                
+                                <div class="thumb"> <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502186978.pPOLO2-26315018_standard_v400.jpg" alt="STANDARD FIT COTTON WORKSHIRT"></div>
+                                                            <span class="tag text-center">
+                                        Men's Clothing                        </span>
+                                    <h2 class="title text-center">STANDARD FIT COTTON WORKSHIRT</h2>
+                                    <div class="price text-center">
+                                                                        $165 
+                                    
+                                        
+                                    </div>
+                                    
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            
+                                            <span products_id = '10' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">0</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/standard-fit-cotton-workshirt" class="fa fa-eye"></a>
+                                    </div>
+                                    <div class="buttons">
+                                                                
+                                            <button  class="btn btn-block btn-secondary cart" products_id="10">Add to Cart</button>
+                                            
+                                                                </div>
+                                </div>
+                                
+                            </article>
+                            </div>
+                                                <div class="product last-product">
+                                <article>
+                                    <a href="http://demo.laravelcommerce.com/shop?type=topseller" class="buttons">
+                                        <span class="fa fa-angle-right"></span>
+                                        <span class="btn btn-secondary">View All</span>
+                                    </a>
+                                    
+                                </article>
+                                </div>
+                            
+                            </div>
+                        <!-- 1st tab --> 
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="special" role="tabpanel" aria-labelledby="special-tab">
+                        <div id="owl_special" class="owl-carousel">                                 <div class="product">
+                            <article>
+                            
+                                <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502366586.pPOLO2-25834797_standard_v400.jpg" alt="FLAG COMBED COTTON SWEATER"></div>
+                                <span class='discount-tag'>20%</span>                     <span class="tag text-center">
+                                    Girl's Clothing                    </span>
+                                
+                                <h2 class="title text-center">FLAG COMBED COTTON SWEATER</h2>
+                                
+                                <div class="price text-center">                     
+                                    $125                    
+                                    <span>$99.99</span>                        
+                                </div>                   
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            <span products_id = '80' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">3</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/flag-combed-cotton-sweater" class="fa fa-eye"></a>
+                                    </div>
+                                    
+                                    
+                                    <div class="buttons">
+                                                                
+                                            <button  class="btn btn-block btn-secondary cart" products_id="80">Add to Cart</button>
+                                            
+                                                                </div>
+                                </div>
+                    
+                            </article>
+                            </div>
+                                            <div class="product">
+                            <article>
+                            
+                                <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502364697.pPOLO2-23643008_standard_v400.jpg" alt="COTTON CHINO BELTED SHIRTDRESS"></div>
+                                <span class='discount-tag'>57%</span>                     <span class="tag text-center">
+                                    Girl's Clothing                    </span>
+                                
+                                <h2 class="title text-center">COTTON CHINO BELTED SHIRTDRESS</h2>
+                                
+                                <div class="price text-center">                     
+                                    $55                    
+                                    <span>$23.5</span>                        
+                                </div>                   
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            <span products_id = '73' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">4</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/cotton-chino-belted-shirtdress" class="fa fa-eye"></a>
+                                    </div>
+                                    
+                                    
+                                    <div class="buttons">
+                                                                
+                                            <button  class="btn btn-block btn-secondary cart" products_id="73">Add to Cart</button>
+                                            
+                                                                </div>
+                                </div>
+                    
+                            </article>
+                            </div>
+                                            <div class="product">
+                            <article>
+                            
+                                <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502363119.pPOLO2-25464682_standard_v400.jpg" alt="PROPELL II SNEAKER"></div>
+                                <span class='discount-tag'>46%</span>                     <span class="tag text-center">
+                                    Boy's Clothing                    </span>
+                                
+                                <h2 class="title text-center">PROPELL II SNEAKER</h2>
+                                
+                                <div class="price text-center">                     
+                                    $45                    
+                                    <span>$23.99</span>                        
+                                </div>                   
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            <span products_id = '70' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">4</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/propell-ii-sneaker" class="fa fa-eye"></a>
+                                    </div>
+                                    
+                                    
+                                    <div class="buttons">
+                                                                
+                                            <button  class="btn btn-block btn-secondary cart" products_id="70">Add to Cart</button>
+                                            
+                                                                </div>
+                                </div>
+                    
+                            </article>
+                            </div>
+                                            <div class="product">
+                            <article>
+                            
+                                <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502362089.pPOLO2-14689748_standard_v400.jpg" alt="POLO I WOOL TWILL SUIT"></div>
+                                <span class='discount-tag'>19%</span>                     <span class="tag text-center">
+                                    Boy's Clothing                    </span>
+                                
+                                <h2 class="title text-center">POLO I WOOL TWILL SUIT</h2>
+                                
+                                <div class="price text-center">                     
+                                    $550                    
+                                    <span>$445</span>                        
+                                </div>                   
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            <span products_id = '67' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">3</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/polo-i-wool-twill-suit" class="fa fa-eye"></a>
+                                    </div>
+                                    
+                                    
+                                    <div class="buttons">
+                                                                
+                                            <button  class="btn btn-block btn-secondary cart" products_id="67">Add to Cart</button>
+                                            
+                                                                </div>
+                                </div>
+                    
+                            </article>
+                            </div>
+                                            <div class="product">
+                            <article>
+                            
+                                <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502353123.pPOLO2-10531663_standard_v400.jpg" alt="SLIM MOTT-WASH JEAN"></div>
+                                <span class='discount-tag'>47%</span>                     <span class="tag text-center">
+                                    Boy's Clothing                    </span>
+                                
+                                <h2 class="title text-center">SLIM MOTT-WASH JEAN</h2>
+                                
+                                <div class="price text-center">                     
+                                    $45                    
+                                    <span>$23.5</span>                        
+                                </div>                   
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            <span products_id = '65' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">3</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/slim-mott-wash-jean" class="fa fa-eye"></a>
+                                    </div>
+                                    
+                                    
+                                    <div class="buttons">
+                                                                
+                                            <button  class="btn btn-block btn-secondary cart" products_id="65">Add to Cart</button>
+                                            
+                                                                </div>
+                                </div>
+                    
+                            </article>
+                            </div>
+                                            <div class="product">
+                            <article>
+                            
+                                <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502351882.pPOLO2-24921004_standard_v400.jpg" alt="COTTON MESH WORKSHIRT"></div>
+                                <span class='discount-tag'>59%</span>                     <span class="tag text-center">
+                                    Boy's Clothing                    </span>
+                                
+                                <h2 class="title text-center">COTTON MESH WORKSHIRT</h2>
+                                
+                                <div class="price text-center">                     
+                                    $55                    
+                                    <span>$22.2</span>                        
+                                </div>                   
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            <span products_id = '62' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">3</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/cotton-mesh-workshirt" class="fa fa-eye"></a>
+                                    </div>
+                                    
+                                    
+                                    <div class="buttons">
+                                                                
+                                            <button  class="btn btn-block btn-secondary cart" products_id="62">Add to Cart</button>
+                                            
+                                                                </div>
+                                </div>
+                    
+                            </article>
+                            </div>
+                                            <div class="product">
+                            <article>
+                            
+                                <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502274870.pPOLO2-25426585_alternate7_v360x480.jpg" alt="RL Bowery Sateen Duvet Cover"></div>
+                                <span class='discount-tag'>4%</span>                     <span class="tag text-center">
+                                    Household Merchandises                    </span>
+                                
+                                <h2 class="title text-center">RL Bowery Sateen Duvet Cover</h2>
+                                
+                                <div class="price text-center">                     
+                                    $470                    
+                                    <span>$450</span>                        
+                                </div>                   
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            <span products_id = '48' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">2</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/rl-bowery-sateen-duvet-cover" class="fa fa-eye"></a>
+                                    </div>
+                                    
+                                    
+                                    <div class="buttons">
+                                                                
+                                            <button  class="btn btn-block btn-secondary cart" products_id="48">Add to Cart</button>
+                                            
+                                                                </div>
+                                </div>
+                    
+                            </article>
+                            </div>
+                                            <div class="product">
+                            <article>
+                            
+                                <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502268706.pPOLO2-25240665_standard_v400.jpg" alt="RUFFLED FLORAL DRESS &amp; BLOOMER"></div>
+                                <span class='discount-tag'>57%</span>                     <span class="tag text-center">
+                                    Baby & Mother                    </span>
+                                
+                                <h2 class="title text-center">RUFFLED FLORAL DRESS &amp; BLOOMER</h2>
+                                
+                                <div class="price text-center">                     
+                                    $55.5                    
+                                    <span>$23.55</span>                        
+                                </div>                   
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            <span products_id = '44' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">3</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/ruffled-floral-dress-bloomer" class="fa fa-eye"></a>
+                                    </div>
+                                    
+                                    
+                                    <div class="buttons">
+                                                                
+                                            <button  class="btn btn-block btn-secondary cart" products_id="44">Add to Cart</button>
+                                            
+                                                                </div>
+                                </div>
+                    
+                            </article>
+                            </div>
+                                            <div class="product">
+                            <article>
+                            
+                                <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502268005.pPOLO2-25655666_standard_v400.jpg" alt="STRIPED POLO DRESS &amp; BLOOMER"></div>
+                                <span class='discount-tag'>37%</span>                     <span class="tag text-center">
+                                    Baby & Mother                    </span>
+                                
+                                <h2 class="title text-center">STRIPED POLO DRESS &amp; BLOOMER</h2>
+                                
+                                <div class="price text-center">                     
+                                    $35                    
+                                    <span>$21.99</span>                        
+                                </div>                   
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            <span products_id = '43' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">4</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/striped-polo-dress-bloomer" class="fa fa-eye"></a>
+                                    </div>
+                                    
+                                    
+                                    <div class="buttons">
+                                                                
+                                            <button  class="btn btn-block btn-secondary cart" products_id="43">Add to Cart</button>
+                                            
+                                                                </div>
+                                </div>
+                    
+                            </article>
+                            </div>
+                                            <div class="product">
+                            <article>
+                            
+                                <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502264917.pPOLO2-21465903_lifestyle_v400.jpg" alt="STRIPED COTTON HENLEY COVERALL"></div>
+                                <span class='discount-tag'>5%</span>                     <span class="tag text-center">
+                                    Baby & Mother                    </span>
+                                
+                                <h2 class="title text-center">STRIPED COTTON HENLEY COVERALL</h2>
+                                
+                                <div class="price text-center">                     
+                                    $29.5                    
+                                    <span>$27.85</span>                        
+                                </div>                   
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            <span products_id = '39' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">2</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/striped-cotton-henley-coverall" class="fa fa-eye"></a>
+                                    </div>
+                                    
+                                    
+                                    <div class="buttons">
+                                                                
+                                            <button  class="btn btn-block btn-secondary cart" products_id="39">Add to Cart</button>
+                                            
+                                                                </div>
+                                </div>
+                    
+                            </article>
+                            </div>
+                                            <div class="product">
+                            <article>
+                            
+                                <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502195102.pPOLO2-25759495_alternate1_v400.jpg" alt="MADRAS FIT-AND-FLARE DRESS"></div>
+                                <span class='discount-tag'>41%</span>                     <span class="tag text-center">
+                                    Women's Clothing                    </span>
+                                
+                                <h2 class="title text-center">MADRAS FIT-AND-FLARE DRESS</h2>
+                                
+                                <div class="price text-center">                     
+                                    $258                    
+                                    <span>$150</span>                        
+                                </div>                   
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            <span products_id = '25' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">0</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/madras-fit-and-flare-dress" class="fa fa-eye"></a>
+                                    </div>
+                                    
+                                    
+                                    <div class="buttons">
+                                                                
+                                            <button  class="btn btn-block btn-secondary cart" products_id="25">Add to Cart</button>
+                                            
+                                                                </div>
+                                </div>
+                    
+                            </article>
+                            </div>
+                                                <div class="product last-product">
+                                <article>
+                                    <a href="http://demo.laravelcommerce.com/shop?type=special" class="buttons">
+                                        <span class="fa fa-angle-right"></span>
+                                        <span class="btn btn-secondary">View All</span>
+                                    </a>
+                                </article>
+                                </div>
+                                            </div>
+                        </div>
+                        
+                        <div role="tabpanel" class="tab-pane fade" id="liked" role="tabpanel" aria-labelledby="liked-tab">
+                        <div id="owl_liked" class="owl-carousel"> 
+                                                        <div class="product">
+                            <article>
+                                <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502174889.pPOLO2-26314766_standard_v400.jpg" alt="CLASSIC FIT SOFT-TOUCH POLO"></div>
+                                                    <span class="tag text-center">
+                                    Men's Clothing                    </span>
+                                
+                                <h2 class="title text-center">CLASSIC FIT SOFT-TOUCH POLO</h2>
+                            
+                                <div class="price text-center">
+                                                            $85
+                                
+                                </div>
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            
+                                            <span products_id = '1' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">8</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/classic-fit-soft-touch-polo" class="fa fa-eye"></a>
+                                    </div>
+                                    
+                                    <div class="buttons">
+                                                                        <button  class="btn btn-block btn-secondary cart" products_id="1">Add to Cart</button> 
+                                                                </div>
+                                </div>
+                                        
+                                </article>
+                            </div>
+                                            <div class="product">
+                            <article>
+                                <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502366342.pPOLO2-26090785_standard_v400.jpg" alt="CABLE-KNIT CASHMERE SWEATER"></div>
+                                                    <span class="tag text-center">
+                                    Girl's Clothing                    </span>
+                                
+                                <h2 class="title text-center">CABLE-KNIT CASHMERE SWEATER</h2>
+                            
+                                <div class="price text-center">
+                                                            $195
+                                
+                                </div>
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            
+                                            <span products_id = '78' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">8</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/cable-knit-cashmere-sweater" class="fa fa-eye"></a>
+                                    </div>
+                                    
+                                    <div class="buttons">
+                                                                        <button  class="btn btn-block btn-secondary cart" products_id="78">Add to Cart</button> 
+                                                                </div>
+                                </div>
+                                        
+                                </article>
+                            </div>
+                                            <div class="product">
+                            <article>
+                                <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502190187.pPOLO2-26315541_standard_v400.jpg" alt="HAMPTON STRAIGHT FIT JEAN"></div>
+                                                    <span class="tag text-center">
+                                    Men's Clothing                    </span>
+                                
+                                <h2 class="title text-center">HAMPTON STRAIGHT FIT JEAN</h2>
+                            
+                                <div class="price text-center">
+                                                            $125
+                                
+                                </div>
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            
+                                            <span products_id = '13' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">7</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/hampton-straight-fit-jean" class="fa fa-eye"></a>
+                                    </div>
+                                    
+                                    <div class="buttons">
+                                                                        <button  class="btn btn-block btn-secondary cart" products_id="13">Add to Cart</button> 
+                                                                </div>
+                                </div>
+                                        
+                                </article>
+                            </div>
+                                            <div class="product">
+                            <article>
+                                <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502365515.pPOLO2-26091862_alternate1_v400.jpg" alt="FLORAL SKIRT"></div>
+                                                    <span class="tag text-center">
+                                    Girl's Clothing                    </span>
+                                
+                                <h2 class="title text-center">FLORAL SKIRT</h2>
+                            
+                                <div class="price text-center">
+                                                            $49.5
+                                
+                                </div>
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            
+                                            <span products_id = '76' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">7</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/floral-skirt" class="fa fa-eye"></a>
+                                    </div>
+                                    
+                                    <div class="buttons">
+                                                                        <button  class="btn btn-block btn-secondary cart" products_id="76">Add to Cart</button> 
+                                                                </div>
+                                </div>
+                                        
+                                </article>
+                            </div>
+                                            <div class="product">
+                            <article>
+                                <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502191568.pPOLO2-26256404_standard_v400.jpg" alt="DILLIAN II SUEDE CHELSEA BOOT"></div>
+                                                    <span class="tag text-center">
+                                    Men's Clothing                    </span>
+                                
+                                <h2 class="title text-center">DILLIAN II SUEDE CHELSEA BOOT</h2>
+                            
+                                <div class="price text-center">
+                                                            $275
+                                
+                                </div>
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            
+                                            <span products_id = '17' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">6</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/dillian-ii-suede-chelsea-boot" class="fa fa-eye"></a>
+                                    </div>
+                                    
+                                    <div class="buttons">
+                                                                        <button  class="btn btn-block btn-secondary cart" products_id="17">Add to Cart</button> 
+                                                                </div>
+                                </div>
+                                        
+                                </article>
+                            </div>
+                                            <div class="product">
+                            <article>
+                                <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502366686.pPOLO2-25207761_standard_v400.jpg" alt="RUFFLED COTTON CARDIGAN"></div>
+                                                    <span class="tag text-center">
+                                    Girl's Clothing                    </span>
+                                
+                                <h2 class="title text-center">RUFFLED COTTON CARDIGAN</h2>
+                            
+                                <div class="price text-center">
+                                                            $49.5
+                                
+                                </div>
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            
+                                            <span products_id = '81' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">6</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/ruffled-cotton-cardigan" class="fa fa-eye"></a>
+                                    </div>
+                                    
+                                    <div class="buttons">
+                                                                        <button  class="btn btn-block btn-secondary cart" products_id="81">Add to Cart</button> 
+                                                                </div>
+                                </div>
+                                        
+                                </article>
+                            </div>
+                                            <div class="product">
+                            <article>
+                                <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502114036.pPOLO2-26316336_standard_v400.jpg" alt="HAMPTON CLASSIC FIT SHIRT"></div>
+                                                    <span class="tag text-center">
+                                    Men's Clothing                    </span>
+                                
+                                <h2 class="title text-center">HAMPTON CLASSIC FIT SHIRT</h2>
+                            
+                                <div class="price text-center">
+                                                            $98.5
+                                
+                                </div>
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            
+                                            <span products_id = '2' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">5</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/hampton-classic-fit-shirt" class="fa fa-eye"></a>
+                                    </div>
+                                    
+                                    <div class="buttons">
+                                                                        <button  class="btn btn-block btn-secondary cart" products_id="2">Add to Cart</button> 
+                                                                </div>
+                                </div>
+                                        
+                                </article>
+                            </div>
+                                            <div class="product">
+                            <article>
+                                <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502181584.pPOLO2-26008953_standard_v400.jpg" alt="STANDARD FIT COTTON POPOVER"></div>
+                                                    <span class="tag text-center">
+                                    Men's Clothing                    </span>
+                                
+                                <h2 class="title text-center">STANDARD FIT COTTON POPOVER</h2>
+                            
+                                <div class="price text-center">
+                                                            $125.5
+                                
+                                </div>
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            
+                                            <span products_id = '8' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">5</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/standard-fit-cotton-popover" class="fa fa-eye"></a>
+                                    </div>
+                                    
+                                    <div class="buttons">
+                                                                        <button  class="btn btn-block btn-secondary cart" products_id="8">Add to Cart</button> 
+                                                                </div>
+                                </div>
+                                        
+                                </article>
+                            </div>
+                                            <div class="product">
+                            <article>
+                                <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502174364.pPOLO2-26314826_standard_v400.jpg" alt="CLASSIC FIT COTTON POLO SHIRT"></div>
+                                                    <span class="tag text-center">
+                                    Men's Clothing                    </span>
+                                
+                                <h2 class="title text-center">CLASSIC FIT COTTON POLO SHIRT</h2>
+                            
+                                <div class="price text-center">
+                                                            $85
+                                
+                                </div>
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            
+                                            <span products_id = '4' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">4</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/classic-fit-cotton-polo-shirt" class="fa fa-eye"></a>
+                                    </div>
+                                    
+                                    <div class="buttons">
+                                                                        <button  class="btn btn-block btn-secondary cart" products_id="4">Add to Cart</button> 
+                                                                </div>
+                                </div>
+                                        
+                                </article>
+                            </div>
+                                            <div class="product">
+                            <article>
+                                <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502182426.pPOLO2-26008935_standard_v400.jpg" alt="STANDARD FIT MADRAS POPOVER"></div>
+                                                    <span class="tag text-center">
+                                    Men's Clothing                    </span>
+                                
+                                <h2 class="title text-center">STANDARD FIT MADRAS POPOVER</h2>
+                            
+                                <div class="price text-center">
+                                                            $89.5
+                                
+                                </div>
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            
+                                            <span products_id = '9' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">4</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/standard-fit-madras-popover" class="fa fa-eye"></a>
+                                    </div>
+                                    
+                                    <div class="buttons">
+                                                                        <button  class="btn btn-block btn-secondary cart" products_id="9">Add to Cart</button> 
+                                                                </div>
+                                </div>
+                                        
+                                </article>
+                            </div>
+                                            <div class="product">
+                            <article>
+                                <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502268005.pPOLO2-25655666_standard_v400.jpg" alt="STRIPED POLO DRESS &amp; BLOOMER"></div>
+                                <span class='discount-tag'>37%</span>                    <span class="tag text-center">
+                                    Baby & Mother                    </span>
+                                
+                                <h2 class="title text-center">STRIPED POLO DRESS &amp; BLOOMER</h2>
+                            
+                                <div class="price text-center">
+                                                            $21.99 <span>$35</span>  
+                                </div>
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            
+                                            <span products_id = '43' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">4</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/striped-polo-dress-bloomer" class="fa fa-eye"></a>
+                                    </div>
+                                    
+                                    <div class="buttons">
+                                                                        <button  class="btn btn-block btn-secondary cart" products_id="43">Add to Cart</button> 
+                                                                </div>
+                                </div>
+                                        
+                                </article>
+                            </div>
+                                            <div class="product">
+                            <article>
+                                <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502363119.pPOLO2-25464682_standard_v400.jpg" alt="PROPELL II SNEAKER"></div>
+                                <span class='discount-tag'>46%</span>                    <span class="tag text-center">
+                                    Boy's Clothing                    </span>
+                                
+                                <h2 class="title text-center">PROPELL II SNEAKER</h2>
+                            
+                                <div class="price text-center">
+                                                            $23.99 <span>$45</span>  
+                                </div>
+                                
+                                <div class="product-hover">
+                                    <div class="icons">
+                                        <div class="icon-liked">
+                                            
+                                            <span products_id = '70' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">4</span></span>
+                                        </div>
+                                        
+                                        <a href="http://demo.laravelcommerce.com/product-detail/propell-ii-sneaker" class="fa fa-eye"></a>
+                                    </div>
+                                    
+                                    <div class="buttons">
+                                                                        <button  class="btn btn-block btn-secondary cart" products_id="70">Add to Cart</button> 
+                                                                </div>
+                                </div>
+                                        
+                                </article>
+                            </div>
+                                                <div class="product last-product">
+                                <article>
+                                    <a href="http://demo.laravelcommerce.com/shop?type=mostliked" class="buttons">
+                                        <span class="fa fa-angle-right"></span>
+                                        <span class="btn btn-secondary">View All</span>
+                                    </a>
+                                </article>
+                                </div>
+                                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+        <!-- ./end of dynamic content -->
         </div>
-      </div>
-    </div>
+    </section>
+    <section class="products-content"> 
+        <div class="container-fuild">
+            <div class="container">
+                <div class="products-area">
+                <!-- heading -->
+                    <div class="heading">
+                        <h2>Top Selling of the Week 
+                            <small class="pull-right">
+                                <a href="http://demo.laravelcommerce.com/shop?type=topseller">View All</a>
+                            </small>
+                        </h2>
+                        <hr>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12">
+                        <!-- Items -->
+                            <div class="row">
+                                <div class="products products-5x">
+                                    <div class="product product-2x">
+                                        <span class="product-featured-tag"><i class="fa fa-flag-o" aria-hidden="true"></i>&nbsp;Featured</span>
+                                        <div class="buttons-liked">
+                                            <span products_id="17" class="fa  fa-heart-o  is_liked">
+                                                <span class="badge badge-secondary">6</span>
+                                            </span>
+                                        </div>
+                                        <article>
+                                            <div class="thumb">
+                                                <img class="img-fluid" src="{{ asset('img/ecom/1502191568.pPOLO2-26256404_standard_v400.jpg') }}" alt="DILLIAN II SUEDE CHELSEA BOOT">
+                                            </div>
+                                            <span class="tag">Men's Clothing</span>
+                                            <h2 class="title">DILLIAN II SUEDE CHELSEA BOOT</h2>
+                                            <div class="price"> $275</div>
+                                            <div class="block">
+                                                <span class="option-name">Colors</span>
+                                                <span class="option-value">Black</span>
+                                                <span class="option-name">Size</span>
+                                                <span class="option-value">7D</span>
+                                                <span class="option-value">|</span>
+                                                <span class="option-value">8D</span>
+                                            </div>
+                                            <div class="buttons">
+                                                <a href="http://demo.laravelcommerce.com/#" class="btn btn-secondary">Add to Cart</a>
+                                                <a href="http://demo.laravelcommerce.com/product-detail/dillian-ii-suede-chelsea-boot" class="btn btn-dark">View Detail</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <!-- Product sold -->
+                                    <div class="product">
+                                        <article>
+                                            <div class="thumb"> 
+                                                <img class="img-fluid" src="{{ asset('img/ecom/1502366686.pPOLO2-25207761_standard_v400.jpg') }}" alt="RUFFLED COTTON CARDIGAN"> 
+                                            </div>
+                                            <span class="tag text-center">Girl's Clothing</span>
+                                            <h2 class="title text-center">RUFFLED COTTON CARDIGAN</h2>
+                                            <div class="price text-center">$49.5</div>
+                                            <div class="product-hover">
+                                                <div class="icons">
+                                                    <div class="icon-liked">
+                                                        <span products_id="81" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">6</span></span>
+                                                    </div>
+                                                    <a href="http://demo.laravelcommerce.com/product-detail/ruffled-cotton-cardigan" class="fa fa-eye"></a>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-block btn-secondary cart" products_id="81">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="product">
+                                        <article>
+                                            <div class="thumb"> 
+                                                <img class="img-fluid" src="{{ asset('img/ecom/1502190187.pPOLO2-26315541_standard_v400.jpg') }}" alt="HAMPTON STRAIGHT FIT JEAN"> 
+                                            </div>
+                                            <span class="tag text-center">Men's Clothing</span>
+                                            <h2 class="title text-center">HAMPTON STRAIGHT FIT JEAN</h2>
+                                            <div class="price text-center">$125</div>
+                                            <div class="product-hover">
+                                            <div class="icons">
+                                                <div class="icon-liked">
+                                                    <span products_id="13" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">6</span></span>
+                                                </div>
+                                                <a href="http://demo.laravelcommerce.com/product-detail/hampton-straight-fit-jean" class="fa fa-eye"></a>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-block btn-secondary cart" products_id="13">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="product">
+                                        <article>
+                                            <div class="thumb"> 
+                                                <img class="img-fluid" src="{{ asset('img/ecom/1502364697.pPOLO2-23643008_standard_v400.jpg') }}" alt="COTTON CHINO BELTED SHIRTDRESS"> 
+                                            </div>
+                                            <span class="discount-tag">57%</span>                                    
+                                            <span class="tag text-center">Girl's Clothing</span>
+                                            <h2 class="title text-center">COTTON CHINO BELTED SHIRTDRESS</h2>
+                                            <div class="price text-center">$23.5 <span>$55</span></div>
+                                            <div class="product-hover">
+                                                <div class="icons">
+                                                    <div class="icon-liked">
+                                                        <span products_id="73" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">4</span></span>
+                                                    </div>
+                                                    <a href="http://demo.laravelcommerce.com/product-detail/cotton-chino-belted-shirtdress" class="fa fa-eye"></a>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-block btn-secondary cart" products_id="73">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-banners">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12">
+                            <div class="banner-image en">
+                                <a title="Banner Image" href="http://demo.laravelcommerce.com/#">
+                                    <img class="img-fluid" src="{{ asset('img/ecom/sale_banners_en.jpg') }}" alt="Banner Image">
+                                </a>
+                            </div>
+                            <div class="banner-image ar">
+                                <a title="Banner Image" href="http://demo.laravelcommerce.com/#">
+                                    <img class="img-fluid" src="{{ asset('img/ecom/sale_banners_ar.jpg') }}" alt="Banner Image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fuild">
+            <div class="container">
+                <div class="products-area">
+                <!-- heading -->
+                    <div class="heading">
+                        <h2>Special Products of the Week 
+                            <small class="pull-right">
+                                <a href="http://demo.laravelcommerce.com/shop?type=special">View All</a>
+                            </small>
+                        </h2>
+                        <hr>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="row">
+                                <!-- Items -->
+                                <div class="products products-5x">
+                                    <!-- Product -->
+                                    <div class="product">
+                                        <article>
+                                            <div class="thumb">
+                                                <img class="img-fluid" src="{{ asset('img/ecom/1502366586.pPOLO2-25834797_standard_v400.jpg') }}" alt="FLAG COMBED COTTON SWEATER">
+                                            </div>
+                                            <span class="discount-tag">20%</span>                            
+                                            <span class="tag text-center">Girl's Clothing</span>
+                                            <h2 class="title text-center">FLAG COMBED COTTON SWEATER</h2>
+                                            <div class="price text-center">$125<span>$99.99</span></div>
+                                            <div class="product-hover">
+                                                <div class="icons">
+                                                    <div class="icon-liked">
+                                                        <span products_id="80" class="fa  fa-heart-o  is_liked">
+                                                            <span class="badge badge-secondary">3</span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="http://demo.laravelcommerce.com/product-detail/flag-combed-cotton-sweater" class="fa fa-eye"></a>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-block btn-secondary cart" products_id="80">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="product">
+                                        <article>
+                                            <div class="thumb">
+                                                <img class="img-fluid" src="{{ asset('img/ecom/1502364697.pPOLO2-23643008_standard_v400.jpg') }}" alt="COTTON CHINO BELTED SHIRTDRESS">
+                                            </div>
+                                            <span class="discount-tag">57%</span>                            
+                                            <span class="tag text-center">Girl's Clothing</span>
+                                            <h2 class="title text-center">COTTON CHINO BELTED SHIRTDRESS</h2>
+                                            <div class="price text-center">$55<span>$23.5</span></div>
+                                            <div class="product-hover">
+                                                <div class="icons">
+                                                    <div class="icon-liked">
+                                                        <span products_id="73" class="fa  fa-heart-o  is_liked">
+                                                            <span class="badge badge-secondary">4</span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="http://demo.laravelcommerce.com/product-detail/cotton-chino-belted-shirtdress" class="fa fa-eye"></a>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-block btn-secondary cart" products_id="73">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="product">
+                                        <article>
+                                            <div class="thumb">
+                                                <img class="img-fluid" src="{{ asset('img/ecom/1502363119.pPOLO2-25464682_standard_v400.jpg') }}" alt="PROPELL II SNEAKER">
+                                            </div>
+                                            <span class="discount-tag">46%</span>                            
+                                            <span class="tag text-center">Boy's Clothing</span>
+                                            <h2 class="title text-center">PROPELL II SNEAKER</h2>
+                                            <div class="price text-center">$45<span>$23.99</span></div>
+                                            <div class="product-hover">
+                                                <div class="icons">
+                                                    <div class="icon-liked">
+                                                        <span products_id="70" class="fa  fa-heart-o  is_liked">
+                                                            <span class="badge badge-secondary">4</span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="http://demo.laravelcommerce.com/product-detail/propell-ii-sneaker" class="fa fa-eye"></a>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-block btn-secondary cart" products_id="70">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="product">
+                                        <article>
+                                            <div class="thumb">
+                                                <img class="img-fluid" src="{{ asset('img/ecom/1502362089.pPOLO2-14689748_standard_v400.jpg') }}" alt="POLO I WOOL TWILL SUIT">
+                                            </div>
+                                            <span class="discount-tag">19%</span>                            
+                                            <span class="tag text-center">Boy's Clothing</span>
+                                            <h2 class="title text-center">POLO I WOOL TWILL SUIT</h2>
+                                            <div class="price text-center">$550<span>$445</span></div>
+                                            <div class="product-hover">
+                                                <div class="icons">
+                                                    <div class="icon-liked">
+                                                        <span products_id="67" class="fa  fa-heart-o  is_liked">
+                                                            <span class="badge badge-secondary">3</span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="http://demo.laravelcommerce.com/product-detail/polo-i-wool-twill-suit" class="fa fa-eye"></a>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-block btn-secondary cart" products_id="67">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="product">
+                                        <article>
+                                            <div class="thumb">
+                                                <img class="img-fluid" src="{{ asset('img/ecom/1502353123.pPOLO2-10531663_standard_v400.jpg') }}" alt="SLIM MOTT-WASH JEAN">
+                                            </div>
+                                            <span class="discount-tag">47%</span>                            
+                                            <span class="tag text-center">Boy's Clothing</span>
+                                            <h2 class="title text-center">SLIM MOTT-WASH JEAN</h2>
+                                            <div class="price text-center">$45<span>$23.5</span></div>
+                                            <div class="product-hover">
+                                                <div class="icons">
+                                                    <div class="icon-liked">
+                                                        <span products_id="65" class="fa  fa-heart-o  is_liked">
+                                                            <span class="badge badge-secondary">3</span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="http://demo.laravelcommerce.com/product-detail/slim-mott-wash-jean" class="fa fa-eye"></a>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-block btn-secondary cart" products_id="65">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="product">
+                                        <article>
+                                            <div class="thumb">
+                                                <img class="img-fluid" src="{{ asset('img/ecom/1502351882.pPOLO2-24921004_standard_v400.jpg') }}" alt="COTTON MESH WORKSHIRT">
+                                            </div>
+                                            <span class="discount-tag">59%</span>                            
+                                            <span class="tag text-center">Boy's Clothing</span>
+                                            <h2 class="title text-center">COTTON MESH WORKSHIRT</h2>
+                                            <div class="price text-center">$55<span>$22.2</span></div>
+                                            <div class="product-hover">
+                                                <div class="icons">
+                                                    <div class="icon-liked">
+                                                        <span products_id="62" class="fa  fa-heart-o  is_liked">
+                                                            <span class="badge badge-secondary">3</span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="http://demo.laravelcommerce.com/product-detail/cotton-mesh-workshirt" class="fa fa-eye"></a>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-block btn-secondary cart" products_id="62">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="product">
+                                        <article>
+                                            <div class="thumb">
+                                                <img class="img-fluid" src="{{ asset('img/ecom/1502274870.pPOLO2-25426585_alternate7_v360x480.jpg') }}" alt="RL Bowery Sateen Duvet Cover">
+                                            </div>
+                                            <span class="discount-tag">4%</span>                            
+                                            <span class="tag text-center">Household Merchandises</span>
+                                            <h2 class="title text-center">RL Bowery Sateen Duvet Cover</h2>
+                                            <div class="price text-center">$470<span>$450</span></div>
+                                            <div class="product-hover">
+                                                <div class="icons">
+                                                    <div class="icon-liked">
+                                                        <span products_id="48" class="fa  fa-heart-o  is_liked">
+                                                            <span class="badge badge-secondary">2</span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="http://demo.laravelcommerce.com/product-detail/rl-bowery-sateen-duvet-cover" class="fa fa-eye"></a>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-block btn-secondary cart" products_id="48">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="product">
+                                        <article>
+                                            <div class="thumb">
+                                                <img class="img-fluid" src="{{ asset('img/ecom/1502268706.pPOLO2-25240665_standard_v400.jpg') }}" alt="RUFFLED FLORAL DRESS &amp; BLOOMER">
+                                            </div>
+                                            <span class="discount-tag">57%</span>                            
+                                            <span class="tag text-center">Baby &amp; Mother</span>
+                                            <h2 class="title text-center">RUFFLED FLORAL DRESS &amp; BLOOMER</h2>
+                                            <div class="price text-center">$55.5<span>$23.55</span></div>
+                                            <div class="product-hover">
+                                                <div class="icons">
+                                                    <div class="icon-liked">
+                                                        <span products_id="44" class="fa  fa-heart-o  is_liked">
+                                                            <span class="badge badge-secondary">3</span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="http://demo.laravelcommerce.com/product-detail/ruffled-floral-dress-bloomer" class="fa fa-eye"></a>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-block btn-secondary cart" products_id="44">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="product">
+                                        <article>
+                                            <div class="thumb">
+                                                <img class="img-fluid" src="{{ asset('img/ecom/1502268005.pPOLO2-25655666_standard_v400.jpg') }}" alt="STRIPED POLO DRESS &amp; BLOOMER">
+                                            </div>
+                                            <span class="discount-tag">37%</span>                            
+                                            <span class="tag text-center">Baby &amp; Mother</span>
+                                            <h2 class="title text-center">STRIPED POLO DRESS &amp; BLOOMER</h2>
+                                            <div class="price text-center">$35<span>$21.99</span></div>
+                                            <div class="product-hover">
+                                                <div class="icons">
+                                                    <div class="icon-liked">
+                                                        <span products_id="43" class="fa  fa-heart-o  is_liked">
+                                                            <span class="badge badge-secondary">4</span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="http://demo.laravelcommerce.com/product-detail/striped-polo-dress-bloomer" class="fa fa-eye"></a>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-block btn-secondary cart" products_id="43">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="product">
+                                        <article>
+                                            <div class="thumb">
+                                                <img class="img-fluid" src="{{ asset('img/ecom/1502264917.pPOLO2-21465903_lifestyle_v400.jpg') }}" alt="STRIPED COTTON HENLEY COVERALL">
+                                            </div>
+                                            <span class="discount-tag">5%</span>                            
+                                            <span class="tag text-center">Baby &amp; Mother</span>
+                                            <h2 class="title text-center">STRIPED COTTON HENLEY COVERALL</h2>
+                                            <div class="price text-center">$29.5<span>$27.85</span></div>
+                                            <div class="product-hover">
+                                                <div class="icons">
+                                                    <div class="icon-liked">
+                                                        <span products_id="39" class="fa  fa-heart-o  is_liked">
+                                                            <span class="badge badge-secondary">2</span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="http://demo.laravelcommerce.com/product-detail/striped-cotton-henley-coverall" class="fa fa-eye"></a>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-block btn-secondary cart" products_id="39">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-banners">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="banner-image en">
+                                <a title="Banner Image" href="http://demo.laravelcommerce.com/#">
+                                    <img class="img-fluid" src="{{ asset('img/ecom/large_banner_en.jpg') }}" alt="Banner Image">
+                                </a>
+                            </div>
+                            <div class="banner-image ar">
+                                <a title="Banner Image" href="http://demo.laravelcommerce.com/#">
+                                    <img class="img-fluid" src="{{ asset('img/ecom/large_banner_ar.jpg') }}" alt="Banner Image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fuild">
+            <div class="container">
+                <div class="products-area">
+                <!-- heading -->
+                    <div class="heading">
+                        <h2>Categories <small class="pull-right"><!--<a href="shop" >View All</a>--></small></h2>
+                        <hr>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="row">
+                                <!-- Items -->
+                                <div class="products products-5x">
+                                    <!-- categories -->                                                                
+                                    <div class="product">
+                                        <div class="blog-post">
+                                            <article>
+                                                <div class="module">
+                                                    <a href="http://demo.laravelcommerce.com/shop?category=men-s-clothing" class="cat-thumb">
+                                                        <img class="img-fluid" src="{{ asset('img/ecom/1502285429.men.jpg') }}" alt="Men&#39;s Clothing">
+                                                    </a>
+                                                    <a href="http://demo.laravelcommerce.com/shop?category=men-s-clothing" class="cat-title">
+                                                        Men's Clothing
+                                                    </a>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="product">
+                                        <div class="blog-post">
+                                            <article>
+                                                <div class="module">
+                                                    <a href="http://demo.laravelcommerce.com/shop?category=women-s-clothing" class="cat-thumb">
+                                                        <img class="img-fluid" src="{{ asset('img/ecom/1502285278.women.jpg') }}" alt="Women&#39;s Clothing">
+                                                    </a>
+                                                    <a href="http://demo.laravelcommerce.com/shop?category=women-s-clothing" class="cat-title">
+                                                        Women's Clothing
+                                                    </a>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="product">
+                                        <div class="blog-post">
+                                            <article>
+                                                <div class="module">
+                                                    <a href="http://demo.laravelcommerce.com/shop?category=boy-s-clothing" class="cat-thumb">
+                                                        <img class="img-fluid" src="{{ asset('img/ecom/1502285654.boys.jpg') }}" alt="Boy&#39;s Clothing">
+                                                    </a>
+                                                    <a href="http://demo.laravelcommerce.com/shop?category=boy-s-clothing" class="cat-title">
+                                                        Boy's Clothing
+                                                    </a>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="product">
+                                        <div class="blog-post">
+                                            <article>
+                                                <div class="module">
+                                                    <a href="http://demo.laravelcommerce.com/shop?category=girl-s-clothing" class="cat-thumb">
+                                                        <img class="img-fluid" src="{{ asset('img/ecom/1502285903.girls.jpg') }}" alt="Girl&#39;s Clothing">
+                                                    </a>
+                                                    <a href="http://demo.laravelcommerce.com/shop?category=girl-s-clothing" class="cat-title">
+                                                        Girl's Clothing
+                                                    </a>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="product">
+                                        <div class="blog-post">
+                                            <article>
+                                                <div class="module">
+                                                    <a href="http://demo.laravelcommerce.com/shop?category=baby-mother" class="cat-thumb">
+                                                        <img class="img-fluid" src="{{ asset('img/ecom/1502285986.babies.jpg') }}" alt="Baby &amp; Mother">
+                                                    </a>
+                                                    <a href="http://demo.laravelcommerce.com/shop?category=baby-mother" class="cat-title">
+                                                        Baby &amp; Mother
+                                                    </a>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="product">
+                                        <div class="blog-post">
+                                            <article>
+                                                <div class="module">
+                                                    <a href="http://demo.laravelcommerce.com/shop?category=household-merchandises" class="cat-thumb">
+                                                        <img class="img-fluid" src="{{ asset('img/ecom/1502286030.home.jpg') }}" alt="Household Merchandises">
+                                                    </a>
+                                                    <a href="http://demo.laravelcommerce.com/shop?category=household-merchandises" class="cat-title">
+                                                        Household Merchandises
+                                                    </a>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="product">
+                                        <div class="blog-post">
+                                            <article>
+                                                <div class="module">
+                                                    <a href="http://demo.laravelcommerce.com/shop?category=health-beauty-hair" class="cat-thumb">
+                                                        <img class="img-fluid" src="{{ asset('img/ecom/1531492780.healthandbeauty.jpg') }}" alt="Health &amp; Beauty, Hair">
+                                                    </a>
+                                                    <a href="http://demo.laravelcommerce.com/shop?category=health-beauty-hair" class="cat-title">
+                                                        Health &amp; Beauty, Hair
+                                                    </a>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="product">
+                                        <div class="blog-post">
+                                            <article>
+                                                <div class="module">
+                                                    <a href="http://demo.laravelcommerce.com/shop?category=automobiles-motorcycles" class="cat-thumb">
+                                                        <img class="img-fluid" src="{{ asset('img/ecom/1531492795.automobiles.jpg') }}" alt="Automobiles &amp; Motorcycles">
+                                                    </a>
+                                                    <a href="http://demo.laravelcommerce.com/shop?category=automobiles-motorcycles" class="cat-title">
+                                                        Automobiles &amp; Motorcycles
+                                                    </a>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="product">
+                                        <div class="blog-post">
+                                            <article>
+                                                <div class="module">
+                                                    <a href="http://demo.laravelcommerce.com/shop?category=jewelry-watches" class="cat-thumb">
+                                                        <img class="img-fluid" src="{{ asset('img/ecom/1531492822.watches.jpg') }}" alt="Jewelry &amp; Watches">
+                                                    </a>
+                                                    <a href="http://demo.laravelcommerce.com/shop?category=jewelry-watches" class="cat-title">
+                                                        Jewelry &amp; Watches
+                                                    </a>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="product">
+                                        <div class="blog-post">
+                                            <article>
+                                                <div class="module">
+                                                    <a href="http://demo.laravelcommerce.com/shop?category=cellphones-accessories" class="cat-thumb">
+                                                        <img class="img-fluid" src="{{ asset('img/ecom/1531492844.mobiles.jpg') }}" alt="Cellphones &amp; Accessories">
+                                                    </a>
+                                                    <a href="http://demo.laravelcommerce.com/shop?category=cellphones-accessories" class="cat-title">
+                                                        Cellphones &amp; Accessories
+                                                    </a>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fuild">
+            <div class="container">
+                <div class="products-area">
+                <!-- heading -->
+                    <div class="heading">
+                        <h2>Newest Products 
+                            <small class="pull-right">
+                                <a href="http://demo.laravelcommerce.com/shop">View All</a>
+                            </small>
+                        </h2>
+                        <hr>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="row">
+                                <!-- Items -->
+                                <div class="products products-5x">
+                                    <!-- Product -->
+                                    <div class="product">
+                                        <article>
+                                            <div class="thumb"> 
+                                                <img class="img-fluid" src="{{ asset('img/ecom/1502366686.pPOLO2-25207761_standard_v400.jpg') }}" alt="RUFFLED COTTON CARDIGAN"> 
+                                            </div>
+                                            <span class="tag text-center">Girl's Clothing</span>
+                                            <h2 class="title text-center">RUFFLED COTTON CARDIGAN</h2>
+                                            <div class="price text-center">$49.5</div>
+                                            <div class="product-hover">
+                                                <div class="icons">
+                                                    <div class="icon-liked">
+                                                        <span products_id="81" class="fa  fa-heart-o  is_liked">
+                                                            <span class="badge badge-secondary">6</span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="http://demo.laravelcommerce.com/product-detail/ruffled-cotton-cardigan" class="fa fa-eye"></a>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-block btn-secondary cart" products_id="81">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="product">
+                                        <article>
+                                            <div class="thumb"> 
+                                                <img class="img-fluid" src="{{ asset('img/ecom/1502366586.pPOLO2-25834797_standard_v400.jpg') }}" alt="FLAG COMBED COTTON SWEATER"> 
+                                            </div>
+                                            <span class="discount-tag">20%</span>                            
+                                            <span class="tag text-center">Girl's Clothing</span>
+                                            <h2 class="title text-center">FLAG COMBED COTTON SWEATER</h2>
+                                            <div class="price text-center">$99.99 <span> $125</span>                               </div>
+                                            <div class="product-hover">
+                                                <div class="icons">
+                                                    <div class="icon-liked">
+                                                        <span products_id="80" class="fa  fa-heart-o  is_liked">
+                                                            <span class="badge badge-secondary">3</span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="http://demo.laravelcommerce.com/product-detail/flag-combed-cotton-sweater" class="fa fa-eye"></a>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-block btn-secondary cart" products_id="80">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="product">
+                                        <article>
+                                            <div class="thumb"> 
+                                                <img class="img-fluid" src="{{ asset('img/ecom/1502366462.pPOLO2-26090829_standard_v400.jpg') }}" alt="FAIR ISLE HOODED SWEATER"> 
+                                            </div>
+                                            <span class="tag text-center">Girl's Clothing</span>
+                                            <h2 class="title text-center">FAIR ISLE HOODED SWEATER</h2>
+                                            <div class="price text-center">$45</div>
+                                            <div class="product-hover">
+                                                <div class="icons">
+                                                    <div class="icon-liked">
+                                                        <span products_id="79" class="fa  fa-heart-o  is_liked">
+                                                            <span class="badge badge-secondary">4</span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="http://demo.laravelcommerce.com/product-detail/fair-isle-hooded-sweater" class="fa fa-eye"></a>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-block btn-secondary cart" products_id="79">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="product">
+                                        <article>
+                                            <div class="thumb"> 
+                                                <img class="img-fluid" src="{{ asset('img/ecom/1502366342.pPOLO2-26090785_standard_v400.jpg') }}" alt="CABLE-KNIT CASHMERE SWEATER"> 
+                                            </div>
+                                            <span class="tag text-center">Girl's Clothing</span>
+                                            <h2 class="title text-center">CABLE-KNIT CASHMERE SWEATER</h2>
+                                            <div class="price text-center">$195</div>
+                                            <div class="product-hover">
+                                                <div class="icons">
+                                                    <div class="icon-liked">
+                                                        <span products_id="78" class="fa  fa-heart-o  is_liked">
+                                                            <span class="badge badge-secondary">8</span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="http://demo.laravelcommerce.com/product-detail/cable-knit-cashmere-sweater" class="fa fa-eye"></a>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-block btn-secondary cart" products_id="78">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="product">
+                                        <article>
+                                            <div class="thumb"> 
+                                                <img class="img-fluid" src="{{ asset('img/ecom/1502366105.pPOLO2-26091049_alternate1_v400.jpg') }}" alt="PLEATED MADRAS SKIRT"> 
+                                            </div>
+                                            <span class="tag text-center">Girl's Clothing</span>
+                                            <h2 class="title text-center">PLEATED MADRAS SKIRT</h2>
+                                            <div class="price text-center">$56.5</div>
+                                            <div class="product-hover">
+                                                <div class="icons">
+                                                    <div class="icon-liked">
+                                                        <span products_id="77" class="fa  fa-heart-o  is_liked">
+                                                            <span class="badge badge-secondary">4</span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="http://demo.laravelcommerce.com/product-detail/pleated-madras-skirt" class="fa fa-eye"></a>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-block btn-secondary cart" products_id="77">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="product">
+                                        <article>
+                                            <div class="thumb"> 
+                                                <img class="img-fluid" src="{{ asset('img/ecom/1502365515.pPOLO2-26091862_alternate1_v400.jpg') }}" alt="FLORAL SKIRT"> 
+                                            </div>
+                                            <span class="tag text-center">Girl's Clothing</span>
+                                            <h2 class="title text-center">FLORAL SKIRT</h2>
+                                            <div class="price text-center">$49.5</div>
+                                            <div class="product-hover">
+                                                <div class="icons">
+                                                    <div class="icon-liked">
+                                                        <span products_id="76" class="fa  fa-heart-o  is_liked">
+                                                            <span class="badge badge-secondary">7</span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="http://demo.laravelcommerce.com/product-detail/floral-skirt" class="fa fa-eye"></a>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-block btn-secondary cart" products_id="76">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="product">
+                                        <article>
+                                            <div class="thumb"> 
+                                                <img class="img-fluid" src="{{ asset('img/ecom/1502365189.pPOLO2-26091856_standard_v400.jpg') }}" alt="BUTTON-FRONT DENIM SKIRT"> 
+                                            </div>
+                                            <span class="tag text-center">Girl's Clothing</span>
+                                            <h2 class="title text-center">BUTTON-FRONT DENIM SKIRT</h2>
+                                            <div class="price text-center">$49.5</div>
+                                            <div class="product-hover">
+                                                <div class="icons">
+                                                    <div class="icon-liked">
+                                                        <span products_id="75" class="fa  fa-heart-o  is_liked">
+                                                            <span class="badge badge-secondary">3</span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="http://demo.laravelcommerce.com/product-detail/button-front-denim-skirt" class="fa fa-eye"></a>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-block btn-secondary cart" products_id="75">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="product">
+                                        <article>
+                                            <div class="thumb"> 
+                                                <img class="img-fluid" src="{{ asset('img/ecom/1502364932.pPOLO2-25835439_standard_v400.jpg') }}" alt="STRIPED OFF-THE-SHOULDER DRESS"> 
+                                            </div>
+                                            <span class="tag text-center">Girl's Clothing</span>
+                                            <h2 class="title text-center">STRIPED OFF-THE-SHOULDER DRESS</h2>
+                                            <div class="price text-center">$45</div>
+                                            <div class="product-hover">
+                                                <div class="icons">
+                                                    <div class="icon-liked">
+                                                        <span products_id="74" class="fa  fa-heart-o  is_liked">
+                                                            <span class="badge badge-secondary">3</span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="http://demo.laravelcommerce.com/product-detail/striped-off-the-shoulder-dress" class="fa fa-eye"></a>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-block btn-secondary cart" products_id="74">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="product">
+                                        <article>
+                                            <div class="thumb"> 
+                                                <img class="img-fluid" src="{{ asset('img/ecom/1502364697.pPOLO2-23643008_standard_v400.jpg') }}" alt="COTTON CHINO BELTED SHIRTDRESS"> 
+                                            </div>
+                                            <span class="discount-tag">57%</span>                            
+                                            <span class="tag text-center">Girl's Clothing</span>
+                                            <h2 class="title text-center">COTTON CHINO BELTED SHIRTDRESS</h2>
+                                            <div class="price text-center">$23.5 <span> $55</span></div>
+                                            <div class="product-hover">
+                                                <div class="icons">
+                                                    <div class="icon-liked">
+                                                        <span products_id="73" class="fa  fa-heart-o  is_liked">
+                                                            <span class="badge badge-secondary">4</span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="http://demo.laravelcommerce.com/product-detail/cotton-chino-belted-shirtdress" class="fa fa-eye"></a>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-block btn-secondary cart" products_id="73">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="product">
+                                        <article>
+                                            <div class="thumb"> 
+                                                <img class="img-fluid" src="{{ asset('img/ecom/1502364150.pPOLO2-26091141_standard_v400.jpg') }}" alt="MADRAS COTTON SHIRTDRESS"> 
+                                            </div>
+                                            <span class="tag text-center">
+                                            Girl's Clothing                            </span>
+                                            <h2 class="title text-center">MADRAS COTTON SHIRTDRESS</h2>
+                                            <div class="price text-center">$59</div>
+                                            <div class="product-hover">
+                                                <div class="icons">
+                                                    <div class="icon-liked">
+                                                        <span products_id="72" class="fa  fa-heart-o  is_liked">
+                                                            <span class="badge badge-secondary">2</span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="http://demo.laravelcommerce.com/product-detail/madras-cotton-shirtdress" class="fa fa-eye"></a>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-block btn-secondary cart" products_id="72">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-    <!-- ./end of dynamic content -->
-  </div>
-</section>
 
 <section class="products-content"> <div class="container-fuild">
   <div class="container">
-    <div class="products-area">
+    <div class="products-area"> 
 		<!-- heading -->
-
+      
         <div class="heading">
-        <h2>Top Selling of the Week <small class="pull-right"><a href="http://demo.laravelcommerce.com/shop?type=topseller">View All</a></small></h2>
+        <h2>Top Selling of the Week <small class="pull-right"><a href="http://demo.laravelcommerce.com/shop?type=topseller" >View All</a></small></h2>
         <hr>
         </div>
-      	<div class="row">
+      	<div class="row"> 
         	<div class="col-xs-12 col-sm-12">
             	<!-- Items -->
                 <div class="row">
                   	<div class="products products-5x">
-
-
+                  	                
+                                                            
                     <div class="product product-2x">
                         <span class="product-featured-tag"><i class="fa fa-flag-o" aria-hidden="true"></i>&nbsp;Featured</span>
                         <div class="buttons-liked">
-
-                            <span products_id="17" class="fa  fa-heart-o  is_liked">
+                        	
+                            <span products_id = '17' class="fa  fa-heart-o  is_liked">
                             	<span class="badge badge-secondary">6</span>
                             </span>
                         </div>
-
+                        
                         <article>
-                            <div class="thumb"><img class="img-fluid" src="{{ asset('img/ecom/1502191568.pPOLO2-26256404_standard_v400.jpg') }}" alt="DILLIAN II SUEDE CHELSEA BOOT"></div>
+                            <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502191568.pPOLO2-26256404_standard_v400.jpg" alt="DILLIAN II SUEDE CHELSEA BOOT"></div>
                             <span class="tag">Men's Clothing</span>
                             <h2 class="title">DILLIAN II SUEDE CHELSEA BOOT</h2>
                             <div class="price">
-
+                                                                    
                                     $275
-
+                                
                                                             </div>
-                            <div class="block">
-
-
-
-
-
+                            <div class="block"> 
+                                 
+                                
+                                                                        
+                                     
+                                    
                                     <span class="option-name">Colors</span>
-
-
+                                    
+                                                                        
                                     <span class="option-value">Black</span>
-
-
-
-
-
-
-
+                                    
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                     
+                                    
                                     <span class="option-name">Size</span>
-
-
+                                    
+                                                                        
                                     <span class="option-value">7D</span>
-
-
+                                    
+                                                                        
                                     <span class="option-value">|</span>
-
-
-
+                                    
+                                                                        
+                                                                        
                                     <span class="option-value">8D</span>
-
-
-
-
-
+                                    
+                                                                        
+                                                                        
+                                                                    
+                                                            
                             </div>
-
+                            
                             <div class="buttons">
-                            	<a href="http://demo.laravelcommerce.com/#" class="btn btn-secondary">Add to Cart</a>
+                            	<a href="#" class="btn btn-secondary">Add to Cart</a>
                             	<a href="http://demo.laravelcommerce.com/product-detail/dillian-ii-suede-chelsea-boot" class="btn btn-dark">View Detail</a>
                             </div>
                         </article>
                     </div>
-
-
-
+       
+                                                             
+                    
                     <!-- Product sold -->
-
-
+                                    
+                                    
                                                     <div class="product">
                               <article>
-                                <div class="thumb"> <img class="img-fluid" src="{{ asset('img/ecom/1502366686.pPOLO2-25207761_standard_v400.jpg') }}" alt="RUFFLED COTTON CARDIGAN"> </div>
+                                <div class="thumb"> <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502366686.pPOLO2-25207761_standard_v400.jpg" alt="RUFFLED COTTON CARDIGAN"> </div>
                                                                         <span class="tag text-center">
                                         Girl's Clothing                                    </span>
-
-                                    <h2 class="title text-center">RUFFLED COTTON CARDIGAN</h2>
-                                    <div class="price text-center">
-                                        $49.5
+                                    
+                                    <h2 class="title text-center">RUFFLED COTTON CARDIGAN</h2>                                
+                                    <div class="price text-center">                                         
+                                        $49.5                                        
                                                                             </div>
-
+                                    
                                     <div class="product-hover">
                                         <div class="icons">
                                             <div class="icon-liked">
-                                                <span products_id="81" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">6</span></span>
+                                                <span products_id = '81' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">6</span></span>
                                             </div>
-
+                                            
                                             <a href="http://demo.laravelcommerce.com/product-detail/ruffled-cotton-cardigan" class="fa fa-eye"></a>
                                         </div>
-
+                                        
                                        	<div class="buttons">
-
-                                                <button class="btn btn-block btn-secondary cart" products_id="81">Add to Cart</button>
+                                        	                                         
+                                                <button  class="btn btn-block btn-secondary cart" products_id="81">Add to Cart</button>                                               
                                                                                     </div>
-
+                                        
                                      </div>
                                 </article>
                             </div>
-
-
-
+                         
+                    
+                                    
                                                     <div class="product">
                               <article>
-                                <div class="thumb"> <img class="img-fluid" src="{{ asset('img/ecom/1502190187.pPOLO2-26315541_standard_v400.jpg') }}" alt="HAMPTON STRAIGHT FIT JEAN"> </div>
+                                <div class="thumb"> <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502190187.pPOLO2-26315541_standard_v400.jpg" alt="HAMPTON STRAIGHT FIT JEAN"> </div>
                                                                         <span class="tag text-center">
                                         Men's Clothing                                    </span>
-
-                                    <h2 class="title text-center">HAMPTON STRAIGHT FIT JEAN</h2>
-                                    <div class="price text-center">
-                                        $125
+                                    
+                                    <h2 class="title text-center">HAMPTON STRAIGHT FIT JEAN</h2>                                
+                                    <div class="price text-center">                                         
+                                        $125                                        
                                                                             </div>
-
+                                    
                                     <div class="product-hover">
                                         <div class="icons">
                                             <div class="icon-liked">
-                                                <span products_id="13" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">6</span></span>
+                                                <span products_id = '13' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">7</span></span>
                                             </div>
-
+                                            
                                             <a href="http://demo.laravelcommerce.com/product-detail/hampton-straight-fit-jean" class="fa fa-eye"></a>
                                         </div>
-
+                                        
                                        	<div class="buttons">
-
-                                                <button class="btn btn-block btn-secondary cart" products_id="13">Add to Cart</button>
+                                        	                                         
+                                                <button  class="btn btn-block btn-secondary cart" products_id="13">Add to Cart</button>                                               
                                                                                     </div>
-
+                                        
                                      </div>
                                 </article>
                             </div>
-
-
-
+                         
+                    
+                                    
                                                     <div class="product">
                               <article>
-                                <div class="thumb"> <img class="img-fluid" src="{{ asset('img/ecom/1502364697.pPOLO2-23643008_standard_v400.jpg') }}" alt="COTTON CHINO BELTED SHIRTDRESS"> </div>
-                                    <span class="discount-tag">57%</span>                                    <span class="tag text-center">
+                                <div class="thumb"> <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502364697.pPOLO2-23643008_standard_v400.jpg" alt="COTTON CHINO BELTED SHIRTDRESS"> </div>
+                                    <span class='discount-tag'>57%</span>                                    <span class="tag text-center">
                                         Girl's Clothing                                    </span>
-
-                                    <h2 class="title text-center">COTTON CHINO BELTED SHIRTDRESS</h2>
-                                    <div class="price text-center">
+                                    
+                                    <h2 class="title text-center">COTTON CHINO BELTED SHIRTDRESS</h2>                                
+                                    <div class="price text-center">                                   
                                         $23.5 <span>$55</span>                                     </div>
-
+                                    
                                     <div class="product-hover">
                                         <div class="icons">
                                             <div class="icon-liked">
-                                                <span products_id="73" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">4</span></span>
+                                                <span products_id = '73' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">4</span></span>
                                             </div>
-
+                                            
                                             <a href="http://demo.laravelcommerce.com/product-detail/cotton-chino-belted-shirtdress" class="fa fa-eye"></a>
                                         </div>
-
+                                        
                                        	<div class="buttons">
-
-                                                <button class="btn btn-block btn-secondary cart" products_id="73">Add to Cart</button>
+                                        	                                         
+                                                <button  class="btn btn-block btn-secondary cart" products_id="73">Add to Cart</button>                                               
                                                                                     </div>
-
+                                        
                                      </div>
                                 </article>
                             </div>
-
-
-
+                         
+                    
+                                    
+                                                    <div class="product">
+                              <article>
+                                <div class="thumb"> <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502195642.pPOLO2-25854363_alternate1_v400.jpg" alt="BEADED JERSEY GOWN"> </div>
+                                                                        <span class="tag text-center">
+                                        Women's Clothing                                    </span>
+                                    
+                                    <h2 class="title text-center">BEADED JERSEY GOWN</h2>                                
+                                    <div class="price text-center">                                         
+                                        $198                                        
+                                                                            </div>
+                                    
+                                    <div class="product-hover">
+                                        <div class="icons">
+                                            <div class="icon-liked">
+                                                <span products_id = '27' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">0</span></span>
+                                            </div>
+                                            
+                                            <a href="http://demo.laravelcommerce.com/product-detail/beaded-jersey-gown" class="fa fa-eye"></a>
+                                        </div>
+                                        
+                                       	<div class="buttons">
+                                        	                                         
+                                                <button  class="btn btn-block btn-secondary cart" products_id="27">Add to Cart</button>                                               
+                                                                                    </div>
+                                        
+                                     </div>
+                                </article>
+                            </div>
+                         
+                    
+                                    
+                                                    <div class="product">
+                              <article>
+                                <div class="thumb"> <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502176579.pPOLO2-26316348_standard_v400.jpg" alt="CUSTOM SLIM FIT COTTON SHIRT"> </div>
+                                                                        <span class="tag text-center">
+                                        Men's Clothing                                    </span>
+                                    
+                                    <h2 class="title text-center">CUSTOM SLIM FIT COTTON SHIRT</h2>                                
+                                    <div class="price text-center">                                         
+                                        $98.5                                        
+                                                                            </div>
+                                    
+                                    <div class="product-hover">
+                                        <div class="icons">
+                                            <div class="icon-liked">
+                                                <span products_id = '5' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">3</span></span>
+                                            </div>
+                                            
+                                            <a href="http://demo.laravelcommerce.com/product-detail/custom-slim-fit-cotton-shirt" class="fa fa-eye"></a>
+                                        </div>
+                                        
+                                       	<div class="buttons">
+                                        	                                         
+                                                <button  class="btn btn-block btn-secondary cart" products_id="5">Add to Cart</button>                                               
+                                                                                    </div>
+                                        
+                                     </div>
+                                </article>
+                            </div>
+                         
+                    
+                                    
+                                                    <div class="product">
+                              <article>
+                                <div class="thumb"> <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502174364.pPOLO2-26314826_standard_v400.jpg" alt="CLASSIC FIT COTTON POLO SHIRT"> </div>
+                                                                        <span class="tag text-center">
+                                        Men's Clothing                                    </span>
+                                    
+                                    <h2 class="title text-center">CLASSIC FIT COTTON POLO SHIRT</h2>                                
+                                    <div class="price text-center">                                         
+                                        $85                                        
+                                                                            </div>
+                                    
+                                    <div class="product-hover">
+                                        <div class="icons">
+                                            <div class="icon-liked">
+                                                <span products_id = '4' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">4</span></span>
+                                            </div>
+                                            
+                                            <a href="http://demo.laravelcommerce.com/product-detail/classic-fit-cotton-polo-shirt" class="fa fa-eye"></a>
+                                        </div>
+                                        
+                                       	<div class="buttons">
+                                        	                                         
+                                                <button  class="btn btn-block btn-secondary cart" products_id="4">Add to Cart</button>                                               
+                                                                                    </div>
+                                        
+                                     </div>
+                                </article>
+                            </div>
+                         
+                    
+                                    
+                                                    <div class="product">
+                              <article>
+                                <div class="thumb"> <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502177321.pPOLO2-26314634_standard_v400.jpg" alt="CUSTOM SLIM FIT WEATHERED POLO"> </div>
+                                                                        <span class="tag text-center">
+                                        Men's Clothing                                    </span>
+                                    
+                                    <h2 class="title text-center">CUSTOM SLIM FIT WEATHERED POLO</h2>                                
+                                    <div class="price text-center">                                         
+                                        $89.5                                        
+                                                                            </div>
+                                    
+                                    <div class="product-hover">
+                                        <div class="icons">
+                                            <div class="icon-liked">
+                                                <span products_id = '6' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">3</span></span>
+                                            </div>
+                                            
+                                            <a href="http://demo.laravelcommerce.com/product-detail/custom-slim-fit-weathered-polo" class="fa fa-eye"></a>
+                                        </div>
+                                        
+                                       	<div class="buttons">
+                                        	                                         
+                                                <button  class="btn btn-block btn-secondary cart" products_id="6">Add to Cart</button>                                               
+                                                                                    </div>
+                                        
+                                     </div>
+                                </article>
+                            </div>
+                         
+                    
+                                    
+                                                    <div class="product">
+                              <article>
+                                <div class="thumb"> <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502181584.pPOLO2-26008953_standard_v400.jpg" alt="STANDARD FIT COTTON POPOVER"> </div>
+                                                                        <span class="tag text-center">
+                                        Men's Clothing                                    </span>
+                                    
+                                    <h2 class="title text-center">STANDARD FIT COTTON POPOVER</h2>                                
+                                    <div class="price text-center">                                         
+                                        $125.5                                        
+                                                                            </div>
+                                    
+                                    <div class="product-hover">
+                                        <div class="icons">
+                                            <div class="icon-liked">
+                                                <span products_id = '8' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">5</span></span>
+                                            </div>
+                                            
+                                            <a href="http://demo.laravelcommerce.com/product-detail/standard-fit-cotton-popover" class="fa fa-eye"></a>
+                                        </div>
+                                        
+                                       	<div class="buttons">
+                                        	                                         
+                                                <button  class="btn btn-block btn-secondary cart" products_id="8">Add to Cart</button>                                               
+                                                                                    </div>
+                                        
+                                     </div>
+                                </article>
+                            </div>
+                         
+                    
+                                    
+                         
+                    
+                                    
+                         
+                    
+                                    
+                         
+                    
+                                    
+                         
+                    
+                                        
                                         </div>
                 </div>
             </div>
       	</div>
     </div>
-
+    
     <div class="group-banners">
     	<div class="row">
         	<div class="col-xs-12 col-md-12">
             	<div class="banner-image en">
-                    <a title="Banner Image" href="http://demo.laravelcommerce.com/#"><img class="img-fluid" src="{{ asset('img/ecom/sale_banners_en.jpg') }}" alt="Banner Image"></a>
+                    <a title="Banner Image" href="#"><img class="img-fluid" src="http://demo.laravelcommerce.com/public/images/sale_banners_en.jpg" alt="Banner Image"></a>
                 </div>
                 <div class="banner-image ar">
-                    <a title="Banner Image" href="http://demo.laravelcommerce.com/#"><img class="img-fluid" src="{{ asset('img/ecom/sale_banners_ar.jpg') }}" alt="Banner Image"></a>
+                    <a title="Banner Image" href="#"><img class="img-fluid" src="http://demo.laravelcommerce.com/public/images/sale_banners_ar.jpg" alt="Banner Image"></a>
                 </div>
             </div>
         </div>
@@ -2165,393 +4348,393 @@
 
 <div class="container-fuild">
   <div class="container">
-    <div class="products-area">
+    <div class="products-area"> 
         <!-- heading -->
         <div class="heading">
-        	<h2>Special Products of the Week <small class="pull-right"><a href="http://demo.laravelcommerce.com/shop?type=special">View All</a></small></h2>
+        	<h2>Special Products of the Week <small class="pull-right"><a href="http://demo.laravelcommerce.com/shop?type=special" >View All</a></small></h2>
         	<hr>
         </div>
-        <div class="row">
-
+        <div class="row">         
+            
             <div class="col-xs-12 col-sm-12">
                 <div class="row">
                 	<!-- Items -->
                     <div class="products products-5x">
-                        <!-- Product -->
-
+                        <!-- Product --> 
+                        
                                                                                                 <div class="product">
                           <article>
-                            <div class="thumb"><img class="img-fluid" src="{{ asset('img/ecom/1502366586.pPOLO2-25834797_standard_v400.jpg') }}" alt="FLAG COMBED COTTON SWEATER"></div>
-                            <span class="discount-tag">20%</span>                            <span class="tag text-center">
+                            <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502366586.pPOLO2-25834797_standard_v400.jpg" alt="FLAG COMBED COTTON SWEATER"></div>
+                            <span class='discount-tag'>20%</span>                            <span class="tag text-center">
                                 Girl's Clothing                            </span>
-                            <h2 class="title text-center">FLAG COMBED COTTON SWEATER</h2>
-
+                            <h2 class="title text-center">FLAG COMBED COTTON SWEATER</h2>                          
+                            
                             <div class="price text-center">
                             $125<span>$99.99</span></div>
                             <div class="product-hover">
                                 <div class="icons">
                                     <div class="icon-liked">
-                                        <span products_id="80" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">3</span></span>
+                                        <span products_id = '80' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">3</span></span>
                                     </div>
-
+                                    
                                     <a href="http://demo.laravelcommerce.com/product-detail/flag-combed-cotton-sweater" class="fa fa-eye"></a>
                                 </div>
-
+                                
                                 <div class="buttons">
-
-                                        <button class="btn btn-block btn-secondary cart" products_id="80">Add to Cart</button>
-
+                                	                                
+                                        <button  class="btn btn-block btn-secondary cart" products_id="80">Add to Cart</button>
+                                        
                                                                     </div>
-
+                                
                              </div>
                           </article>
                         </div>
                                                                                                 <div class="product">
                           <article>
-                            <div class="thumb"><img class="img-fluid" src="{{ asset('img/ecom/1502364697.pPOLO2-23643008_standard_v400.jpg') }}" alt="COTTON CHINO BELTED SHIRTDRESS"></div>
-                            <span class="discount-tag">57%</span>                            <span class="tag text-center">
+                            <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502364697.pPOLO2-23643008_standard_v400.jpg" alt="COTTON CHINO BELTED SHIRTDRESS"></div>
+                            <span class='discount-tag'>57%</span>                            <span class="tag text-center">
                                 Girl's Clothing                            </span>
-                            <h2 class="title text-center">COTTON CHINO BELTED SHIRTDRESS</h2>
-
+                            <h2 class="title text-center">COTTON CHINO BELTED SHIRTDRESS</h2>                          
+                            
                             <div class="price text-center">
                             $55<span>$23.5</span></div>
                             <div class="product-hover">
                                 <div class="icons">
                                     <div class="icon-liked">
-                                        <span products_id="73" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">4</span></span>
+                                        <span products_id = '73' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">4</span></span>
                                     </div>
-
+                                    
                                     <a href="http://demo.laravelcommerce.com/product-detail/cotton-chino-belted-shirtdress" class="fa fa-eye"></a>
                                 </div>
-
+                                
                                 <div class="buttons">
-
-                                        <button class="btn btn-block btn-secondary cart" products_id="73">Add to Cart</button>
-
+                                	                                
+                                        <button  class="btn btn-block btn-secondary cart" products_id="73">Add to Cart</button>
+                                        
                                                                     </div>
-
+                                
                              </div>
                           </article>
                         </div>
                                                                                                 <div class="product">
                           <article>
-                            <div class="thumb"><img class="img-fluid" src="{{ asset('img/ecom/1502363119.pPOLO2-25464682_standard_v400.jpg') }}" alt="PROPELL II SNEAKER"></div>
-                            <span class="discount-tag">46%</span>                            <span class="tag text-center">
+                            <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502363119.pPOLO2-25464682_standard_v400.jpg" alt="PROPELL II SNEAKER"></div>
+                            <span class='discount-tag'>46%</span>                            <span class="tag text-center">
                                 Boy's Clothing                            </span>
-                            <h2 class="title text-center">PROPELL II SNEAKER</h2>
-
+                            <h2 class="title text-center">PROPELL II SNEAKER</h2>                          
+                            
                             <div class="price text-center">
                             $45<span>$23.99</span></div>
                             <div class="product-hover">
                                 <div class="icons">
                                     <div class="icon-liked">
-                                        <span products_id="70" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">4</span></span>
+                                        <span products_id = '70' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">4</span></span>
                                     </div>
-
+                                    
                                     <a href="http://demo.laravelcommerce.com/product-detail/propell-ii-sneaker" class="fa fa-eye"></a>
                                 </div>
-
+                                
                                 <div class="buttons">
-
-                                        <button class="btn btn-block btn-secondary cart" products_id="70">Add to Cart</button>
-
+                                	                                
+                                        <button  class="btn btn-block btn-secondary cart" products_id="70">Add to Cart</button>
+                                        
                                                                     </div>
-
+                                
                              </div>
                           </article>
                         </div>
                                                                                                 <div class="product">
                           <article>
-                            <div class="thumb"><img class="img-fluid" src="{{ asset('img/ecom/1502362089.pPOLO2-14689748_standard_v400.jpg') }}" alt="POLO I WOOL TWILL SUIT"></div>
-                            <span class="discount-tag">19%</span>                            <span class="tag text-center">
+                            <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502362089.pPOLO2-14689748_standard_v400.jpg" alt="POLO I WOOL TWILL SUIT"></div>
+                            <span class='discount-tag'>19%</span>                            <span class="tag text-center">
                                 Boy's Clothing                            </span>
-                            <h2 class="title text-center">POLO I WOOL TWILL SUIT</h2>
-
+                            <h2 class="title text-center">POLO I WOOL TWILL SUIT</h2>                          
+                            
                             <div class="price text-center">
                             $550<span>$445</span></div>
                             <div class="product-hover">
                                 <div class="icons">
                                     <div class="icon-liked">
-                                        <span products_id="67" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">3</span></span>
+                                        <span products_id = '67' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">3</span></span>
                                     </div>
-
+                                    
                                     <a href="http://demo.laravelcommerce.com/product-detail/polo-i-wool-twill-suit" class="fa fa-eye"></a>
                                 </div>
-
+                                
                                 <div class="buttons">
-
-                                        <button class="btn btn-block btn-secondary cart" products_id="67">Add to Cart</button>
-
+                                	                                
+                                        <button  class="btn btn-block btn-secondary cart" products_id="67">Add to Cart</button>
+                                        
                                                                     </div>
-
+                                
                              </div>
                           </article>
                         </div>
                                                                                                 <div class="product">
                           <article>
-                            <div class="thumb"><img class="img-fluid" src="{{ asset('img/ecom/1502353123.pPOLO2-10531663_standard_v400.jpg') }}" alt="SLIM MOTT-WASH JEAN"></div>
-                            <span class="discount-tag">47%</span>                            <span class="tag text-center">
+                            <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502353123.pPOLO2-10531663_standard_v400.jpg" alt="SLIM MOTT-WASH JEAN"></div>
+                            <span class='discount-tag'>47%</span>                            <span class="tag text-center">
                                 Boy's Clothing                            </span>
-                            <h2 class="title text-center">SLIM MOTT-WASH JEAN</h2>
-
+                            <h2 class="title text-center">SLIM MOTT-WASH JEAN</h2>                          
+                            
                             <div class="price text-center">
                             $45<span>$23.5</span></div>
                             <div class="product-hover">
                                 <div class="icons">
                                     <div class="icon-liked">
-                                        <span products_id="65" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">3</span></span>
+                                        <span products_id = '65' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">3</span></span>
                                     </div>
-
+                                    
                                     <a href="http://demo.laravelcommerce.com/product-detail/slim-mott-wash-jean" class="fa fa-eye"></a>
                                 </div>
-
+                                
                                 <div class="buttons">
-
-                                        <button class="btn btn-block btn-secondary cart" products_id="65">Add to Cart</button>
-
+                                	                                
+                                        <button  class="btn btn-block btn-secondary cart" products_id="65">Add to Cart</button>
+                                        
                                                                     </div>
-
+                                
                              </div>
                           </article>
                         </div>
                                                                                                 <div class="product">
                           <article>
-                            <div class="thumb"><img class="img-fluid" src="{{ asset('img/ecom/1502351882.pPOLO2-24921004_standard_v400.jpg') }}" alt="COTTON MESH WORKSHIRT"></div>
-                            <span class="discount-tag">59%</span>                            <span class="tag text-center">
+                            <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502351882.pPOLO2-24921004_standard_v400.jpg" alt="COTTON MESH WORKSHIRT"></div>
+                            <span class='discount-tag'>59%</span>                            <span class="tag text-center">
                                 Boy's Clothing                            </span>
-                            <h2 class="title text-center">COTTON MESH WORKSHIRT</h2>
-
+                            <h2 class="title text-center">COTTON MESH WORKSHIRT</h2>                          
+                            
                             <div class="price text-center">
                             $55<span>$22.2</span></div>
                             <div class="product-hover">
                                 <div class="icons">
                                     <div class="icon-liked">
-                                        <span products_id="62" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">3</span></span>
+                                        <span products_id = '62' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">3</span></span>
                                     </div>
-
+                                    
                                     <a href="http://demo.laravelcommerce.com/product-detail/cotton-mesh-workshirt" class="fa fa-eye"></a>
                                 </div>
-
+                                
                                 <div class="buttons">
-
-                                        <button class="btn btn-block btn-secondary cart" products_id="62">Add to Cart</button>
-
+                                	                                
+                                        <button  class="btn btn-block btn-secondary cart" products_id="62">Add to Cart</button>
+                                        
                                                                     </div>
-
+                                
                              </div>
                           </article>
                         </div>
                                                                                                 <div class="product">
                           <article>
-                            <div class="thumb"><img class="img-fluid" src="{{ asset('img/ecom/1502274870.pPOLO2-25426585_alternate7_v360x480.jpg') }}" alt="RL Bowery Sateen Duvet Cover"></div>
-                            <span class="discount-tag">4%</span>                            <span class="tag text-center">
+                            <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502274870.pPOLO2-25426585_alternate7_v360x480.jpg" alt="RL Bowery Sateen Duvet Cover"></div>
+                            <span class='discount-tag'>4%</span>                            <span class="tag text-center">
                                 Household Merchandises                            </span>
-                            <h2 class="title text-center">RL Bowery Sateen Duvet Cover</h2>
-
+                            <h2 class="title text-center">RL Bowery Sateen Duvet Cover</h2>                          
+                            
                             <div class="price text-center">
                             $470<span>$450</span></div>
                             <div class="product-hover">
                                 <div class="icons">
                                     <div class="icon-liked">
-                                        <span products_id="48" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">2</span></span>
+                                        <span products_id = '48' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">2</span></span>
                                     </div>
-
+                                    
                                     <a href="http://demo.laravelcommerce.com/product-detail/rl-bowery-sateen-duvet-cover" class="fa fa-eye"></a>
                                 </div>
-
+                                
                                 <div class="buttons">
-
-                                        <button class="btn btn-block btn-secondary cart" products_id="48">Add to Cart</button>
-
+                                	                                
+                                        <button  class="btn btn-block btn-secondary cart" products_id="48">Add to Cart</button>
+                                        
                                                                     </div>
-
+                                
                              </div>
                           </article>
                         </div>
                                                                                                 <div class="product">
                           <article>
-                            <div class="thumb"><img class="img-fluid" src="{{ asset('img/ecom/1502268706.pPOLO2-25240665_standard_v400.jpg') }}" alt="RUFFLED FLORAL DRESS &amp; BLOOMER"></div>
-                            <span class="discount-tag">57%</span>                            <span class="tag text-center">
-                                Baby &amp; Mother                            </span>
-                            <h2 class="title text-center">RUFFLED FLORAL DRESS &amp; BLOOMER</h2>
-
+                            <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502268706.pPOLO2-25240665_standard_v400.jpg" alt="RUFFLED FLORAL DRESS &amp; BLOOMER"></div>
+                            <span class='discount-tag'>57%</span>                            <span class="tag text-center">
+                                Baby & Mother                            </span>
+                            <h2 class="title text-center">RUFFLED FLORAL DRESS &amp; BLOOMER</h2>                          
+                            
                             <div class="price text-center">
                             $55.5<span>$23.55</span></div>
                             <div class="product-hover">
                                 <div class="icons">
                                     <div class="icon-liked">
-                                        <span products_id="44" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">3</span></span>
+                                        <span products_id = '44' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">3</span></span>
                                     </div>
-
+                                    
                                     <a href="http://demo.laravelcommerce.com/product-detail/ruffled-floral-dress-bloomer" class="fa fa-eye"></a>
                                 </div>
-
+                                
                                 <div class="buttons">
-
-                                        <button class="btn btn-block btn-secondary cart" products_id="44">Add to Cart</button>
-
+                                	                                
+                                        <button  class="btn btn-block btn-secondary cart" products_id="44">Add to Cart</button>
+                                        
                                                                     </div>
-
+                                
                              </div>
                           </article>
                         </div>
                                                                                                 <div class="product">
                           <article>
-                            <div class="thumb"><img class="img-fluid" src="{{ asset('img/ecom/1502268005.pPOLO2-25655666_standard_v400.jpg') }}" alt="STRIPED POLO DRESS &amp; BLOOMER"></div>
-                            <span class="discount-tag">37%</span>                            <span class="tag text-center">
-                                Baby &amp; Mother                            </span>
-                            <h2 class="title text-center">STRIPED POLO DRESS &amp; BLOOMER</h2>
-
+                            <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502268005.pPOLO2-25655666_standard_v400.jpg" alt="STRIPED POLO DRESS &amp; BLOOMER"></div>
+                            <span class='discount-tag'>37%</span>                            <span class="tag text-center">
+                                Baby & Mother                            </span>
+                            <h2 class="title text-center">STRIPED POLO DRESS &amp; BLOOMER</h2>                          
+                            
                             <div class="price text-center">
                             $35<span>$21.99</span></div>
                             <div class="product-hover">
                                 <div class="icons">
                                     <div class="icon-liked">
-                                        <span products_id="43" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">4</span></span>
+                                        <span products_id = '43' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">4</span></span>
                                     </div>
-
+                                    
                                     <a href="http://demo.laravelcommerce.com/product-detail/striped-polo-dress-bloomer" class="fa fa-eye"></a>
                                 </div>
-
+                                
                                 <div class="buttons">
-
-                                        <button class="btn btn-block btn-secondary cart" products_id="43">Add to Cart</button>
-
+                                	                                
+                                        <button  class="btn btn-block btn-secondary cart" products_id="43">Add to Cart</button>
+                                        
                                                                     </div>
-
+                                
                              </div>
                           </article>
                         </div>
                                                                                                 <div class="product">
                           <article>
-                            <div class="thumb"><img class="img-fluid" src="{{ asset('img/ecom/1502264917.pPOLO2-21465903_lifestyle_v400.jpg') }}" alt="STRIPED COTTON HENLEY COVERALL"></div>
-                            <span class="discount-tag">5%</span>                            <span class="tag text-center">
-                                Baby &amp; Mother                            </span>
-                            <h2 class="title text-center">STRIPED COTTON HENLEY COVERALL</h2>
-
+                            <div class="thumb"><img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502264917.pPOLO2-21465903_lifestyle_v400.jpg" alt="STRIPED COTTON HENLEY COVERALL"></div>
+                            <span class='discount-tag'>5%</span>                            <span class="tag text-center">
+                                Baby & Mother                            </span>
+                            <h2 class="title text-center">STRIPED COTTON HENLEY COVERALL</h2>                          
+                            
                             <div class="price text-center">
                             $29.5<span>$27.85</span></div>
                             <div class="product-hover">
                                 <div class="icons">
                                     <div class="icon-liked">
-                                        <span products_id="39" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">2</span></span>
+                                        <span products_id = '39' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">2</span></span>
                                     </div>
-
+                                    
                                     <a href="http://demo.laravelcommerce.com/product-detail/striped-cotton-henley-coverall" class="fa fa-eye"></a>
                                 </div>
-
+                                
                                 <div class="buttons">
-
-                                        <button class="btn btn-block btn-secondary cart" products_id="39">Add to Cart</button>
-
+                                	                                
+                                        <button  class="btn btn-block btn-secondary cart" products_id="39">Add to Cart</button>
+                                        
                                                                     </div>
-
+                                
                              </div>
                           </article>
                         </div>
-
+                                                                                                                        
                                             </div>
                 </div>
             </div>
         </div>
     </div>
-
+    
     <div class="group-banners">
     	<div class="row">
         	<div class="col-xs-12 col-sm-12">
             	<div class="banner-image en">
-                    <a title="Banner Image" href="http://demo.laravelcommerce.com/#"><img class="img-fluid" src="{{ asset('img/ecom/large_banner_en.jpg') }}" alt="Banner Image"></a>
+                    <a title="Banner Image" href="#"><img class="img-fluid" src="http://demo.laravelcommerce.com/public/images/large_banner_en.jpg" alt="Banner Image"></a>
                 </div>
                 <div class="banner-image ar">
-                    <a title="Banner Image" href="http://demo.laravelcommerce.com/#"><img class="img-fluid" src="{{ asset('img/ecom/large_banner_ar.jpg') }}" alt="Banner Image"></a>
+                    <a title="Banner Image" href="#"><img class="img-fluid" src="http://demo.laravelcommerce.com/public/images/large_banner_ar.jpg" alt="Banner Image"></a>
                 </div>
             </div>
         </div>
     </div>
-
+    
   </div>
 </div>
 
 <div class="container-fuild">
   <div class="container">
-    <div class="products-area">
+    <div class="products-area"> 
       <!-- heading -->
       <div class="heading">
         <h2>Categories <small class="pull-right"><!--<a href="shop" >View All</a>--></small></h2>
         <hr>
       </div>
-        <div class="row">
+        <div class="row"> 
             <div class="col-xs-12 col-sm-12">
                 <div class="row">
                     <!-- Items -->
                     <div class="products products-5x">
-                        <!-- categories -->
+                        <!-- categories --> 
                                                                                                                 <div class="product">
                                     <div class="blog-post">
                                         <article>
                                             <div class="module">
                                             	<a href="http://demo.laravelcommerce.com/shop?category=men-s-clothing" class="cat-thumb">
-                                                   <img class="img-fluid" src="{{ asset('img/ecom/1502285429.men.jpg') }}" alt="Men&#39;s Clothing">
+                                                   <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/category_images/1502285429.men.jpg" alt="Men&#039;s Clothing">             
                                                 </a>
                                                 <a href="http://demo.laravelcommerce.com/shop?category=men-s-clothing" class="cat-title">
-                                                	Men's Clothing
+                                                	Men&#039;s Clothing
                                                 </a>
                                             </div>
                                         </article>
                                     </div>
                                 </div>
-
+                                	
                                                                                                                         <div class="product">
                                     <div class="blog-post">
                                         <article>
                                             <div class="module">
                                             	<a href="http://demo.laravelcommerce.com/shop?category=women-s-clothing" class="cat-thumb">
-                                                   <img class="img-fluid" src="{{ asset('img/ecom/1502285278.women.jpg') }}" alt="Women&#39;s Clothing">
+                                                   <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/category_images/1502285278.women.jpg" alt="Women&#039;s Clothing">             
                                                 </a>
                                                 <a href="http://demo.laravelcommerce.com/shop?category=women-s-clothing" class="cat-title">
-                                                	Women's Clothing
+                                                	Women&#039;s Clothing
                                                 </a>
                                             </div>
                                         </article>
                                     </div>
                                 </div>
-
+                                	
                                                                                                                         <div class="product">
                                     <div class="blog-post">
                                         <article>
                                             <div class="module">
                                             	<a href="http://demo.laravelcommerce.com/shop?category=boy-s-clothing" class="cat-thumb">
-                                                   <img class="img-fluid" src="{{ asset('img/ecom/1502285654.boys.jpg') }}" alt="Boy&#39;s Clothing">
+                                                   <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/category_images/1502285654.boys.jpg" alt="Boy&#039;s Clothing">             
                                                 </a>
                                                 <a href="http://demo.laravelcommerce.com/shop?category=boy-s-clothing" class="cat-title">
-                                                	Boy's Clothing
+                                                	Boy&#039;s Clothing
                                                 </a>
                                             </div>
                                         </article>
                                     </div>
                                 </div>
-
+                                	
                                                                                                                         <div class="product">
                                     <div class="blog-post">
                                         <article>
                                             <div class="module">
                                             	<a href="http://demo.laravelcommerce.com/shop?category=girl-s-clothing" class="cat-thumb">
-                                                   <img class="img-fluid" src="{{ asset('img/ecom/1502285903.girls.jpg') }}" alt="Girl&#39;s Clothing">
+                                                   <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/category_images/1502285903.girls.jpg" alt="Girl&#039;s Clothing">             
                                                 </a>
                                                 <a href="http://demo.laravelcommerce.com/shop?category=girl-s-clothing" class="cat-title">
-                                                	Girl's Clothing
+                                                	Girl&#039;s Clothing
                                                 </a>
                                             </div>
                                         </article>
                                     </div>
                                 </div>
-
+                                	
                                                                                                                         <div class="product">
                                     <div class="blog-post">
                                         <article>
                                             <div class="module">
                                             	<a href="http://demo.laravelcommerce.com/shop?category=baby-mother" class="cat-thumb">
-                                                   <img class="img-fluid" src="{{ asset('img/ecom/1502285986.babies.jpg') }}" alt="Baby &amp; Mother">
+                                                   <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/category_images/1502285986.babies.jpg" alt="Baby &amp; Mother">             
                                                 </a>
                                                 <a href="http://demo.laravelcommerce.com/shop?category=baby-mother" class="cat-title">
                                                 	Baby &amp; Mother
@@ -2560,13 +4743,13 @@
                                         </article>
                                     </div>
                                 </div>
-
+                                	
                                                                                                                         <div class="product">
                                     <div class="blog-post">
                                         <article>
                                             <div class="module">
                                             	<a href="http://demo.laravelcommerce.com/shop?category=household-merchandises" class="cat-thumb">
-                                                   <img class="img-fluid" src="{{ asset('img/ecom/1502286030.home.jpg') }}" alt="Household Merchandises">
+                                                   <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/category_images/1502286030.home.jpg" alt="Household Merchandises">             
                                                 </a>
                                                 <a href="http://demo.laravelcommerce.com/shop?category=household-merchandises" class="cat-title">
                                                 	Household Merchandises
@@ -2575,13 +4758,13 @@
                                         </article>
                                     </div>
                                 </div>
-
+                                	
                                                                                                                         <div class="product">
                                     <div class="blog-post">
                                         <article>
                                             <div class="module">
                                             	<a href="http://demo.laravelcommerce.com/shop?category=health-beauty-hair" class="cat-thumb">
-                                                   <img class="img-fluid" src="{{ asset('img/ecom/1531492780.healthandbeauty.jpg') }}" alt="Health &amp; Beauty, Hair">
+                                                   <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/category_images/1531492780.healthandbeauty.jpg" alt="Health &amp; Beauty, Hair">             
                                                 </a>
                                                 <a href="http://demo.laravelcommerce.com/shop?category=health-beauty-hair" class="cat-title">
                                                 	Health &amp; Beauty, Hair
@@ -2590,13 +4773,13 @@
                                         </article>
                                     </div>
                                 </div>
-
+                                	
                                                                                                                         <div class="product">
                                     <div class="blog-post">
                                         <article>
                                             <div class="module">
                                             	<a href="http://demo.laravelcommerce.com/shop?category=automobiles-motorcycles" class="cat-thumb">
-                                                   <img class="img-fluid" src="{{ asset('img/ecom/1531492795.automobiles.jpg') }}" alt="Automobiles &amp; Motorcycles">
+                                                   <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/category_images/1531492795.automobiles.jpg" alt="Automobiles &amp; Motorcycles">             
                                                 </a>
                                                 <a href="http://demo.laravelcommerce.com/shop?category=automobiles-motorcycles" class="cat-title">
                                                 	Automobiles &amp; Motorcycles
@@ -2605,13 +4788,13 @@
                                         </article>
                                     </div>
                                 </div>
-
+                                	
                                                                                                                         <div class="product">
                                     <div class="blog-post">
                                         <article>
                                             <div class="module">
                                             	<a href="http://demo.laravelcommerce.com/shop?category=jewelry-watches" class="cat-thumb">
-                                                   <img class="img-fluid" src="{{ asset('img/ecom/1531492822.watches.jpg') }}" alt="Jewelry &amp; Watches">
+                                                   <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/category_images/1531492822.watches.jpg" alt="Jewelry &amp; Watches">             
                                                 </a>
                                                 <a href="http://demo.laravelcommerce.com/shop?category=jewelry-watches" class="cat-title">
                                                 	Jewelry &amp; Watches
@@ -2620,13 +4803,13 @@
                                         </article>
                                     </div>
                                 </div>
-
+                                	
                                                                                                                         <div class="product">
                                     <div class="blog-post">
                                         <article>
                                             <div class="module">
                                             	<a href="http://demo.laravelcommerce.com/shop?category=cellphones-accessories" class="cat-thumb">
-                                                   <img class="img-fluid" src="{{ asset('img/ecom/1531492844.mobiles.jpg') }}" alt="Cellphones &amp; Accessories">
+                                                   <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/category_images/1531492844.mobiles.jpg" alt="Cellphones &amp; Accessories">             
                                                 </a>
                                                 <a href="http://demo.laravelcommerce.com/shop?category=cellphones-accessories" class="cat-title">
                                                 	Cellphones &amp; Accessories
@@ -2635,9 +4818,9 @@
                                         </article>
                                     </div>
                                 </div>
-
-
-
+                                	
+                                                                                        	
+                                                        	
                     </div>
                 </div>
             </div>
@@ -2648,293 +4831,293 @@
 
 <div class="container-fuild">
   <div class="container">
-    <div class="products-area">
+    <div class="products-area"> 
       <!-- heading -->
       <div class="heading">
-        <h2>Newest Products <small class="pull-right"><a href="http://demo.laravelcommerce.com/shop">View All</a></small></h2>
+        <h2>Newest Products <small class="pull-right"><a href="http://demo.laravelcommerce.com/shop" >View All</a></small></h2>
         <hr>
       </div>
-        <div class="row">
+        <div class="row"> 
             <div class="col-xs-12 col-sm-12">
                 <div class="row">
                     <!-- Items -->
                     <div class="products products-5x">
-                        <!-- Product -->
-
+                        <!-- Product --> 
+                                      
                                                 <div class="product">
                           <article>
-                            <div class="thumb"> <img class="img-fluid" src="{{ asset('img/ecom/1502366686.pPOLO2-25207761_standard_v400.jpg') }}" alt="RUFFLED COTTON CARDIGAN"> </div>
+                            <div class="thumb"> <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502366686.pPOLO2-25207761_standard_v400.jpg" alt="RUFFLED COTTON CARDIGAN"> </div>
                                                         <span class="tag text-center">
                             Girl's Clothing                            </span>
                             <h2 class="title text-center">RUFFLED COTTON CARDIGAN</h2>
-                            <div class="price text-center">
+                            <div class="price text-center">                               
                               $49.5
-
+                              
                                                             </div>
                             <div class="product-hover">
                                 <div class="icons">
                                     <div class="icon-liked">
-                                        <span products_id="81" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">6</span></span>
+                                        <span products_id = '81' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">6</span></span>
                                     </div>
-
+                                    
                                     <a href="http://demo.laravelcommerce.com/product-detail/ruffled-cotton-cardigan" class="fa fa-eye"></a>
                                 </div>
-
+                                
                                 <div class="buttons">
-
-                                        <button class="btn btn-block btn-secondary cart" products_id="81">Add to Cart</button>
-
-                                                                    </div>
+                                	                                
+                                        <button  class="btn btn-block btn-secondary cart" products_id="81">Add to Cart</button>
+                                        
+                                                                    </div>                                
                              </div>
                             </article>
                         </div>
                                                 <div class="product">
                           <article>
-                            <div class="thumb"> <img class="img-fluid" src="{{ asset('img/ecom/1502366586.pPOLO2-25834797_standard_v400.jpg') }}" alt="FLAG COMBED COTTON SWEATER"> </div>
-                            <span class="discount-tag">20%</span>                            <span class="tag text-center">
+                            <div class="thumb"> <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502366586.pPOLO2-25834797_standard_v400.jpg" alt="FLAG COMBED COTTON SWEATER"> </div>
+                            <span class='discount-tag'>20%</span>                            <span class="tag text-center">
                             Girl's Clothing                            </span>
                             <h2 class="title text-center">FLAG COMBED COTTON SWEATER</h2>
-                            <div class="price text-center">
+                            <div class="price text-center">                               
                               $99.99 <span> $125</span>                               </div>
                             <div class="product-hover">
                                 <div class="icons">
                                     <div class="icon-liked">
-                                        <span products_id="80" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">3</span></span>
+                                        <span products_id = '80' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">3</span></span>
                                     </div>
-
+                                    
                                     <a href="http://demo.laravelcommerce.com/product-detail/flag-combed-cotton-sweater" class="fa fa-eye"></a>
                                 </div>
-
+                                
                                 <div class="buttons">
-
-                                        <button class="btn btn-block btn-secondary cart" products_id="80">Add to Cart</button>
-
-                                                                    </div>
+                                	                                
+                                        <button  class="btn btn-block btn-secondary cart" products_id="80">Add to Cart</button>
+                                        
+                                                                    </div>                                
                              </div>
                             </article>
                         </div>
                                                 <div class="product">
                           <article>
-                            <div class="thumb"> <img class="img-fluid" src="{{ asset('img/ecom/1502366462.pPOLO2-26090829_standard_v400.jpg') }}" alt="FAIR ISLE HOODED SWEATER"> </div>
+                            <div class="thumb"> <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502366462.pPOLO2-26090829_standard_v400.jpg" alt="FAIR ISLE HOODED SWEATER"> </div>
                                                         <span class="tag text-center">
                             Girl's Clothing                            </span>
                             <h2 class="title text-center">FAIR ISLE HOODED SWEATER</h2>
-                            <div class="price text-center">
+                            <div class="price text-center">                               
                               $45
-
+                              
                                                             </div>
                             <div class="product-hover">
                                 <div class="icons">
                                     <div class="icon-liked">
-                                        <span products_id="79" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">4</span></span>
+                                        <span products_id = '79' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">4</span></span>
                                     </div>
-
+                                    
                                     <a href="http://demo.laravelcommerce.com/product-detail/fair-isle-hooded-sweater" class="fa fa-eye"></a>
                                 </div>
-
+                                
                                 <div class="buttons">
-
-                                        <button class="btn btn-block btn-secondary cart" products_id="79">Add to Cart</button>
-
-                                                                    </div>
+                                	                                
+                                        <button  class="btn btn-block btn-secondary cart" products_id="79">Add to Cart</button>
+                                        
+                                                                    </div>                                
                              </div>
                             </article>
                         </div>
                                                 <div class="product">
                           <article>
-                            <div class="thumb"> <img class="img-fluid" src="{{ asset('img/ecom/1502366342.pPOLO2-26090785_standard_v400.jpg') }}" alt="CABLE-KNIT CASHMERE SWEATER"> </div>
+                            <div class="thumb"> <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502366342.pPOLO2-26090785_standard_v400.jpg" alt="CABLE-KNIT CASHMERE SWEATER"> </div>
                                                         <span class="tag text-center">
                             Girl's Clothing                            </span>
                             <h2 class="title text-center">CABLE-KNIT CASHMERE SWEATER</h2>
-                            <div class="price text-center">
+                            <div class="price text-center">                               
                               $195
-
+                              
                                                             </div>
                             <div class="product-hover">
                                 <div class="icons">
                                     <div class="icon-liked">
-                                        <span products_id="78" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">8</span></span>
+                                        <span products_id = '78' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">8</span></span>
                                     </div>
-
+                                    
                                     <a href="http://demo.laravelcommerce.com/product-detail/cable-knit-cashmere-sweater" class="fa fa-eye"></a>
                                 </div>
-
+                                
                                 <div class="buttons">
-
-                                        <button class="btn btn-block btn-secondary cart" products_id="78">Add to Cart</button>
-
-                                                                    </div>
+                                	                                
+                                        <button  class="btn btn-block btn-secondary cart" products_id="78">Add to Cart</button>
+                                        
+                                                                    </div>                                
                              </div>
                             </article>
                         </div>
                                                 <div class="product">
                           <article>
-                            <div class="thumb"> <img class="img-fluid" src="{{ asset('img/ecom/1502366105.pPOLO2-26091049_alternate1_v400.jpg') }}" alt="PLEATED MADRAS SKIRT"> </div>
+                            <div class="thumb"> <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502366105.pPOLO2-26091049_alternate1_v400.jpg" alt="PLEATED MADRAS SKIRT"> </div>
                                                         <span class="tag text-center">
                             Girl's Clothing                            </span>
                             <h2 class="title text-center">PLEATED MADRAS SKIRT</h2>
-                            <div class="price text-center">
+                            <div class="price text-center">                               
                               $56.5
-
+                              
                                                             </div>
                             <div class="product-hover">
                                 <div class="icons">
                                     <div class="icon-liked">
-                                        <span products_id="77" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">4</span></span>
+                                        <span products_id = '77' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">4</span></span>
                                     </div>
-
+                                    
                                     <a href="http://demo.laravelcommerce.com/product-detail/pleated-madras-skirt" class="fa fa-eye"></a>
                                 </div>
-
+                                
                                 <div class="buttons">
-
-                                        <button class="btn btn-block btn-secondary cart" products_id="77">Add to Cart</button>
-
-                                                                    </div>
+                                	                                
+                                        <button  class="btn btn-block btn-secondary cart" products_id="77">Add to Cart</button>
+                                        
+                                                                    </div>                                
                              </div>
                             </article>
                         </div>
                                                 <div class="product">
                           <article>
-                            <div class="thumb"> <img class="img-fluid" src="{{ asset('img/ecom/1502365515.pPOLO2-26091862_alternate1_v400.jpg') }}" alt="FLORAL SKIRT"> </div>
+                            <div class="thumb"> <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502365515.pPOLO2-26091862_alternate1_v400.jpg" alt="FLORAL SKIRT"> </div>
                                                         <span class="tag text-center">
                             Girl's Clothing                            </span>
                             <h2 class="title text-center">FLORAL SKIRT</h2>
-                            <div class="price text-center">
+                            <div class="price text-center">                               
                               $49.5
-
+                              
                                                             </div>
                             <div class="product-hover">
                                 <div class="icons">
                                     <div class="icon-liked">
-                                        <span products_id="76" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">7</span></span>
+                                        <span products_id = '76' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">7</span></span>
                                     </div>
-
+                                    
                                     <a href="http://demo.laravelcommerce.com/product-detail/floral-skirt" class="fa fa-eye"></a>
                                 </div>
-
+                                
                                 <div class="buttons">
-
-                                        <button class="btn btn-block btn-secondary cart" products_id="76">Add to Cart</button>
-
-                                                                    </div>
+                                	                                
+                                        <button  class="btn btn-block btn-secondary cart" products_id="76">Add to Cart</button>
+                                        
+                                                                    </div>                                
                              </div>
                             </article>
                         </div>
                                                 <div class="product">
                           <article>
-                            <div class="thumb"> <img class="img-fluid" src="{{ asset('img/ecom/1502365189.pPOLO2-26091856_standard_v400.jpg') }}" alt="BUTTON-FRONT DENIM SKIRT"> </div>
+                            <div class="thumb"> <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502365189.pPOLO2-26091856_standard_v400.jpg" alt="BUTTON-FRONT DENIM SKIRT"> </div>
                                                         <span class="tag text-center">
                             Girl's Clothing                            </span>
                             <h2 class="title text-center">BUTTON-FRONT DENIM SKIRT</h2>
-                            <div class="price text-center">
+                            <div class="price text-center">                               
                               $49.5
-
+                              
                                                             </div>
                             <div class="product-hover">
                                 <div class="icons">
                                     <div class="icon-liked">
-                                        <span products_id="75" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">3</span></span>
+                                        <span products_id = '75' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">3</span></span>
                                     </div>
-
+                                    
                                     <a href="http://demo.laravelcommerce.com/product-detail/button-front-denim-skirt" class="fa fa-eye"></a>
                                 </div>
-
+                                
                                 <div class="buttons">
-
-                                        <button class="btn btn-block btn-secondary cart" products_id="75">Add to Cart</button>
-
-                                                                    </div>
+                                	                                
+                                        <button  class="btn btn-block btn-secondary cart" products_id="75">Add to Cart</button>
+                                        
+                                                                    </div>                                
                              </div>
                             </article>
                         </div>
                                                 <div class="product">
                           <article>
-                            <div class="thumb"> <img class="img-fluid" src="{{ asset('img/ecom/1502364932.pPOLO2-25835439_standard_v400.jpg') }}" alt="STRIPED OFF-THE-SHOULDER DRESS"> </div>
+                            <div class="thumb"> <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502364932.pPOLO2-25835439_standard_v400.jpg" alt="STRIPED OFF-THE-SHOULDER DRESS"> </div>
                                                         <span class="tag text-center">
                             Girl's Clothing                            </span>
                             <h2 class="title text-center">STRIPED OFF-THE-SHOULDER DRESS</h2>
-                            <div class="price text-center">
+                            <div class="price text-center">                               
                               $45
-
+                              
                                                             </div>
                             <div class="product-hover">
                                 <div class="icons">
                                     <div class="icon-liked">
-                                        <span products_id="74" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">3</span></span>
+                                        <span products_id = '74' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">3</span></span>
                                     </div>
-
+                                    
                                     <a href="http://demo.laravelcommerce.com/product-detail/striped-off-the-shoulder-dress" class="fa fa-eye"></a>
                                 </div>
-
+                                
                                 <div class="buttons">
-
-                                        <button class="btn btn-block btn-secondary cart" products_id="74">Add to Cart</button>
-
-                                                                    </div>
+                                	                                
+                                        <button  class="btn btn-block btn-secondary cart" products_id="74">Add to Cart</button>
+                                        
+                                                                    </div>                                
                              </div>
                             </article>
                         </div>
                                                 <div class="product">
                           <article>
-                            <div class="thumb"> <img class="img-fluid" src="{{ asset('img/ecom/1502364697.pPOLO2-23643008_standard_v400.jpg') }}" alt="COTTON CHINO BELTED SHIRTDRESS"> </div>
-                            <span class="discount-tag">57%</span>                            <span class="tag text-center">
+                            <div class="thumb"> <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502364697.pPOLO2-23643008_standard_v400.jpg" alt="COTTON CHINO BELTED SHIRTDRESS"> </div>
+                            <span class='discount-tag'>57%</span>                            <span class="tag text-center">
                             Girl's Clothing                            </span>
                             <h2 class="title text-center">COTTON CHINO BELTED SHIRTDRESS</h2>
-                            <div class="price text-center">
+                            <div class="price text-center">                               
                               $23.5 <span> $55</span>                               </div>
                             <div class="product-hover">
                                 <div class="icons">
                                     <div class="icon-liked">
-                                        <span products_id="73" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">4</span></span>
+                                        <span products_id = '73' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">4</span></span>
                                     </div>
-
+                                    
                                     <a href="http://demo.laravelcommerce.com/product-detail/cotton-chino-belted-shirtdress" class="fa fa-eye"></a>
                                 </div>
-
+                                
                                 <div class="buttons">
-
-                                        <button class="btn btn-block btn-secondary cart" products_id="73">Add to Cart</button>
-
-                                                                    </div>
+                                	                                
+                                        <button  class="btn btn-block btn-secondary cart" products_id="73">Add to Cart</button>
+                                        
+                                                                    </div>                                
                              </div>
                             </article>
                         </div>
                                                 <div class="product">
                           <article>
-                            <div class="thumb"> <img class="img-fluid" src="{{ asset('img/ecom/1502364150.pPOLO2-26091141_standard_v400.jpg') }}" alt="MADRAS COTTON SHIRTDRESS"> </div>
+                            <div class="thumb"> <img class="img-fluid" src="http://demo.laravelcommerce.com/resources/assets/images/product_images/1502364150.pPOLO2-26091141_standard_v400.jpg" alt="MADRAS COTTON SHIRTDRESS"> </div>
                                                         <span class="tag text-center">
                             Girl's Clothing                            </span>
                             <h2 class="title text-center">MADRAS COTTON SHIRTDRESS</h2>
-                            <div class="price text-center">
+                            <div class="price text-center">                               
                               $59
-
+                              
                                                             </div>
                             <div class="product-hover">
                                 <div class="icons">
                                     <div class="icon-liked">
-                                        <span products_id="72" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">2</span></span>
+                                        <span products_id = '72' class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">2</span></span>
                                     </div>
-
+                                    
                                     <a href="http://demo.laravelcommerce.com/product-detail/madras-cotton-shirtdress" class="fa fa-eye"></a>
                                 </div>
-
+                                
                                 <div class="buttons">
-
-                                        <button class="btn btn-block btn-secondary cart" products_id="72">Add to Cart</button>
-
-                                                                    </div>
+                                	                                
+                                        <button  class="btn btn-block btn-secondary cart" products_id="72">Add to Cart</button>
+                                        
+                                                                    </div>                                
                              </div>
                             </article>
                         </div>
-
+                                                
                                             </div>
                 </div>
             </div>
         </div>
     </div>
-
-
+    
+    
   </div>
 </div>
 
@@ -2943,325 +5126,304 @@
 
 
 
-
-<section class="blog-content">
-<div class="container">
-    <div class="blog-area">
-        <!-- heading -->
-        <div class="heading">
-            <h2>From our News <small class="pull-right"><a href="http://demo.laravelcommerce.com/news">View All</a></small></h2>
-            <hr>
-        </div>
-
-		<div class="row">
-            <div class="blogs blogs-3x">
-            	<!-- Blog Post -->
-									                        <div class="blog-post">
+    <section class="blog-content">
+        <div class="container">
+            <div class="blog-area">
+                <!-- heading -->
+                <div class="heading">
+                    <h2>From our News 
+                        <small class="pull-right">
+                            <a href="http://demo.laravelcommerce.com/news">View All</a>
+                        </small>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="blogs blogs-3x">
+                        <!-- Blog Post -->
+                        <div class="blog-post">
                             <article>
                                 <div class="blog-thumb">
-                                	<h4 class="blog-title">
+                                    <h4 class="blog-title">
                                         <a href="http://demo.laravelcommerce.com/news-detail/fashion-1">Fashion </a>
-                                                                                    <span class="badge badge-success">Featured</span>
-                                                                            </h4>
-                                    <span class="blog-date">
-                                        <strong>
-                                            30                                        </strong>
-                                        Mar                                    </span>
-
+                                        <span class="badge badge-success">Featured</span>
+                                    </h4>
+                                    <span class="blog-date"><strong>30</strong>Mar</span>
                                     <div class="blog-overlay">
                                         <a href="http://demo.laravelcommerce.com/news-detail/fashion-1" class="fa fa-search-plus"></a>
                                     </div>
-
                                     <img class="img-fluid" src="{{ asset('img/ecom/1531930664.blog-img-2.jpg') }}" alt="">
                                 </div>
                             </article>
                         </div>
-                	                        <div class="blog-post">
+                        <div class="blog-post">
                             <article>
                                 <div class="blog-thumb">
-                                	<h4 class="blog-title">
+                                    <h4 class="blog-title">
                                         <a href="http://demo.laravelcommerce.com/news-detail/why-to-choose-this-app-for-your-project">Why To choose this App for your Project? </a>
-                                                                                    <span class="badge badge-success">Featured</span>
-                                                                            </h4>
-                                    <span class="blog-date">
-                                        <strong>
-                                            22                                        </strong>
-                                        Aug                                    </span>
-
+                                        <span class="badge badge-success">Featured</span>
+                                    </h4>
+                                    <span class="blog-date"><strong>22</strong>Aug</span>
                                     <div class="blog-overlay">
                                         <a href="http://demo.laravelcommerce.com/news-detail/why-to-choose-this-app-for-your-project" class="fa fa-search-plus"></a>
                                     </div>
-
                                     <img class="img-fluid" src="{{ asset('img/ecom/1531930697.blog-img-3.jpg') }}" alt="">
                                 </div>
                             </article>
                         </div>
-                	                        <div class="blog-post">
+                        <div class="blog-post">
                             <article>
                                 <div class="blog-thumb">
-                                	<h4 class="blog-title">
+                                    <h4 class="blog-title">
                                         <a href="http://demo.laravelcommerce.com/news-detail/tools-and-technology">Tools and Technology </a>
-                                                                                    <span class="badge badge-success">Featured</span>
-                                                                            </h4>
-                                    <span class="blog-date">
-                                        <strong>
-                                            22                                        </strong>
-                                        Aug                                    </span>
-
+                                        <span class="badge badge-success">Featured</span>
+                                    </h4>
+                                    <span class="blog-date"><strong>22</strong>Aug</span>
                                     <div class="blog-overlay">
                                         <a href="http://demo.laravelcommerce.com/news-detail/tools-and-technology" class="fa fa-search-plus"></a>
                                     </div>
-
                                     <img class="img-fluid" src="{{ asset('img/ecom/1531930680.blog-img-1.jpg') }}" alt="">
                                 </div>
                             </article>
                         </div>
-                	            				</div>
-		</div>
-    </div>
-</div>
-</section>
-
-
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 	<section class="banner-content">
     	<div class="container">
-		<div class="row">
-
-            <div class="col-12 col-md-6 col-lg-3 p-0">
-                <div class="banner-single">
-                    <div class="panel">
-                        <h3 class="fa fa-truck"></h3>
-                        <div class="block">
-                            <h4 class="title">Free Shipping</h4>
-                            <p>On order over $99</p>
+		    <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 p-0">
+                    <div class="banner-single">
+                        <div class="panel">
+                            <h3 class="fas fa-shipping-fast"></h3>
+                            <div class="block">
+                                <h4 class="title">Free Shipping</h4>
+                                <p>On order over $99</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 p-0">
-                <div class="banner-single">
-                	<div class="panel">
-                    	<h3 class="fa fa-money"></h3>
-                        <div class="block">
-                            <h4 class="title">Money Return</h4>
-                            <p>30 Days money return</p>
+                <div class="col-12 col-md-6 col-lg-3 p-0">
+                    <div class="banner-single">
+                        <div class="panel">
+                            <h3 class="fa fa-money-bill-alt"></h3>
+                            <div class="block">
+                                <h4 class="title">Money Return</h4>
+                                <p>30 Days money return</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 p-0">
-                <div class="banner-single second-last">
-                	<div class="panel">
-                        <h3 class="fa fa-life-ring"></h3>
-                        <div class="block">
-                            <h4 class="title">Support 24/7</h4>
-                            <p>Hotline&nbsp;:&nbsp;+92 312 1234567</p>
+                <div class="col-12 col-md-6 col-lg-3 p-0">
+                    <div class="banner-single second-last">
+                        <div class="panel">
+                            <h3 class="far fa-life-ring"></h3>
+                            <div class="block">
+                                <h4 class="title">Support 24/7</h4>
+                                <p>Hotline&nbsp;:&nbsp;+92 312 1234567</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 p-0">
-                <div class="banner-single last">
-                    <div class="panel">
-                    	<h3 class="fa fa-credit-card"></h3>
-                        <div class="block">
-                            <h4 class="title">Safe Payment</h4>
-                            <p>Protect online payment</p>
+                <div class="col-12 col-md-6 col-lg-3 p-0">
+                    <div class="banner-single last">
+                        <div class="panel">
+                            <h3 class="far fa-credit-card"></h3>
+                            <div class="block">
+                                <h4 class="title">Safe Payment</h4>
+                                <p>Protect online payment</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-		</div>
-	</div>
+		    </div>
+	    </div>
     </section>
 
     <footer class="footer-content">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="single-footer">
-          <h5>About Store</h5>
-          <ul class="contact-list  pl-0 mb-0">
-            <li> <i class="fa fa-map-marker"></i><span>address City State, Zip Country</span> </li>
-            <li> <i class="fa fa-phone"></i><span>+92 312 1234567</span> </li>
-            <li> <i class="fa fa-envelope"></i><span> <a href="mailto:sales@brandbychoice.com">vectorcoder@gmail.com</a> </span> </li>
-
-          </ul>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="footer-block">
-        	<div class="single-footer">
-              <h5>Our Services</h5>
-              <ul class="links-list pl-0 mb-0">
-                <li> <a href="http://demo.laravelcommerce.com/"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Home</a> </li>
-                <li> <a href="http://demo.laravelcommerce.com/shop"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Shop</a> </li>
-                <li> <a href="http://demo.laravelcommerce.com/orders"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Orders</a> </li>
-                <li> <a href="http://demo.laravelcommerce.com/viewcart"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Shopping Cart</a> </li>            <li> <a href="http://demo.laravelcommerce.com/wishlist"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Wishlist</a> </li>
-              </ul>
-            </div>
-            <div class="single-footer">
-              <h5>Information</h5>
-              <ul class="links-list pl-0 mb-0">
-                                                            <li> <a href="http://demo.laravelcommerce.com/page?name=about-us"><i class="fa fa-angle-double-right" aria-hidden="true"></i>About Us</a> </li>
-                                            <li> <a href="http://demo.laravelcommerce.com/page?name=privacy-policy"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Privacy Policy</a> </li>
-                                            <li> <a href="http://demo.laravelcommerce.com/page?name=refund-policy"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Refund Policy</a> </li>
-                                            <li> <a href="http://demo.laravelcommerce.com/page?name=term-services"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Term &amp; Services</a> </li>
-
-                <li> <a href="http://demo.laravelcommerce.com/contact-us"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Contact Us</a> </li>
-              </ul>
-            </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-lg-4">
-        <div class="single-footer">
-            <div class="newsletter">
-            	<h5>Subscribe for Newsletter</h5>
-                <div class="block">
-                    <input type="email" placeholder="Your email address here...">
-                    <button type="button" class="btn btn-secondary">Subscribe!</button>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-footer">
+                        <h5>About Store</h5>
+                        <ul class="contact-list  pl-0 mb-0">
+                            <li> <i class="fas fa-map-marker-alt"></i><span>address City State, Zip Country</span> </li>
+                            <li> <i class="fa fa-phone fa-flip-horizontal"></i><span>+92 312 1234567</span> </li>
+                            <li> <i class="fa fa-envelope"></i><span> <a href="mailto:sales@brandbychoice.com">vectorcoder@gmail.com</a> </span> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="footer-block">
+                        <div class="single-footer">
+                            <h5>Our Services</h5>
+                            <ul class="links-list pl-0 mb-0">
+                                <li> <a href="http://demo.laravelcommerce.com/"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Home</a> </li>
+                                <li> <a href="http://demo.laravelcommerce.com/shop"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Shop</a> </li>
+                                <li> <a href="http://demo.laravelcommerce.com/orders"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Orders</a> </li>
+                                <li> <a href="http://demo.laravelcommerce.com/viewcart"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Shopping Cart</a> </li>            <li> <a href="http://demo.laravelcommerce.com/wishlist"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Wishlist</a> </li>
+                            </ul>
+                        </div>
+                        <div class="single-footer">
+                            <h5>Information</h5>
+                            <ul class="links-list pl-0 mb-0">
+                                <li> <a href="http://demo.laravelcommerce.com/page?name=about-us"><i class="fa fa-angle-double-right" aria-hidden="true"></i>About Us</a> </li>
+                                <li> <a href="http://demo.laravelcommerce.com/page?name=privacy-policy"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Privacy Policy</a> </li>
+                                <li> <a href="http://demo.laravelcommerce.com/page?name=refund-policy"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Refund Policy</a> </li>
+                                <li> <a href="http://demo.laravelcommerce.com/page?name=term-services"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Term &amp; Services</a> </li>
+                                <li> <a href="http://demo.laravelcommerce.com/contact-us"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Contact Us</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="single-footer">
+                        <div class="newsletter">
+                            <h5>Subscribe for Newsletter</h5>
+                            <div class="block">
+                                <input type="email" placeholder="Your email address here...">
+                                <button type="button" class="btn btn-secondary">Subscribe!</button>
+                            </div>
+                        </div>
+                        <div class="socials">
+                            <h5>Follow Us</h5>
+                            <ul class="list">
+                                <li><a href="http://demo.laravelcommerce.com/#" class="fab fa-facebook-f"></a></li>
+                                <li><a href="http://demo.laravelcommerce.com/#" class="fab fa-twitter"></a></li>
+                                <li><a href="http://demo.laravelcommerce.com/#" class="fab fa-skype"></a></li>
+                                <li><a href="http://demo.laravelcommerce.com/#" class="fab fa-linkedin-in"></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+    </footer>
 
-            <div class="socials">
-            	<h5>Follow Us</h5>
-                <ul class="list">
-                	<li><a href="http://demo.laravelcommerce.com/#" class="fab fa-facebook"></a></li>
-                    <li><a href="http://demo.laravelcommerce.com/#" class="fab fa-twitter"></a></li>
-                    <li><a href="http://demo.laravelcommerce.com/#" class="fab fa-skype"></a></li>
-                    <li><a href="http://demo.laravelcommerce.com/#" class="fab fa-linkedin"></a></li>
-                </ul>
+    <div class="footer py-2 my-2">
+        <div class="container">
+            <div class="row">
+                <div class="footer-image col-12 col-md-6">
+                    <img class="img-fluid" src="{{ asset('img/ecom/payments.png') }}">
+                </div>
+                <div class="footer-info col-12 col-md-6">
+                    <p> © 2017 Company, Inc. <a href="http://demo.laravelcommerce.com/#">Privacy</a> · <a href="http://demo.laravelcommerce.com/#">Terms</a> </p>
+                </div>
+                <div class="floating-top" style="opacity: 0;">
+                    <a href="http://demo.laravelcommerce.com/#" class="fa fa-angle-up"></a>
+                </div>
             </div>
-
-
         </div>
-      </div>
     </div>
-  </div>
-</footer>
 
-<div class="footer py-2 my-2">
-  <div class="container">
-    <div class="row">
-    	<div class="footer-image col-12 col-md-6">
-            <img class="img-fluid" src="{{ asset('img/ecom/payments.png') }}">
-        </div>
-        <div class="footer-info col-12 col-md-6">
-            <p> © 2017 Company, Inc. <a href="http://demo.laravelcommerce.com/#">Privacy</a> · <a href="http://demo.laravelcommerce.com/#">Terms</a> </p>
-        </div>
-        <div class="floating-top" style="opacity: 0;"><a href="http://demo.laravelcommerce.com/#" class="fa fa-angle-up"></a></div>
+    <!--notification-->
+    <div id="message_content"></div>
+    <!--color panel-->
+
+    <div class="color-panel">
+        <button type="button" class="btn slide-toggle"><i class="fa fa-cogs" aria-hidden="true"></i></button>
+        <ul class="list-colors">
+            <h3>Website Skins</h3>
+            <li>
+                <a href="http://demo.laravelcommerce.com/settheme?theme=app">
+                    <span class="color"></span>
+                    <span>Default</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://demo.laravelcommerce.com/settheme?theme=app.theme.1">
+                    <span class="color color-1"></span>
+                    <span>Black</span>
+                    <span class="color color-1-1"></span>
+                    <span>Red</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://demo.laravelcommerce.com/settheme?theme=app.theme.2">
+                    <span class="color color-2"></span>
+                    <span>White</span>
+                    <span class="color color-2-2"></span>
+                    <span>Blue</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://demo.laravelcommerce.com/settheme?theme=app.theme.3">
+                    <span class="color color-3"></span>
+                    <span>White</span>
+                    <span class="color color-3-3"></span>
+                    <span>Parrot</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://demo.laravelcommerce.com/settheme?theme=app.theme.4">
+                    <span class="color color-4"></span>
+                    <span>Cyan </span>
+                    <span class="color color-4-4"></span>
+                    <span>Blue</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://demo.laravelcommerce.com/settheme?theme=app.theme.5">
+                    <span class="color color-5"></span>
+                    <span>Brown</span>
+                    <span class="color color-5-5"></span>
+                    <span>Skin</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://demo.laravelcommerce.com/settheme?theme=app.theme.6">
+                    <span class="color color-6"></span>
+                    <span>White</span>
+                    <span class="color color-6-6"></span>
+                    <span>Yellow</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://demo.laravelcommerce.com/settheme?theme=app.theme.7">
+                    <span class="color color-7"></span>
+                    <span>White</span>
+                    <span class="color color-7-7"></span>
+                    <span>Red</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://demo.laravelcommerce.com/settheme?theme=app.theme.8">
+                    <span class="color color-8"></span>
+                    <span>Baby Pink</span>
+                    <span class="color color-8-8"></span>
+                    <span>Purple</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://demo.laravelcommerce.com/settheme?theme=app.theme.9">
+                    <span class="color color-9"></span>
+                    <span>Black</span>
+                    <span class="color color-9-9"></span>
+                    <span>White</span>
+                </a>
+            </li>
+        </ul>
     </div>
-  </div>
-</div>
 
-<!--notification-->
-<div id="message_content"></div>
-<!--color panel-->
+    <!-- loader content -->
+    <div class="loader" id="loader" style="display: none;">
+        <img src="{{ asset('img/ecom/loader.gif') }}">
+    </div>
+        <!-- all js scripts including custom js -->
 
-<div class="color-panel">
-	<button type="button" class="btn slide-toggle"><i class="fa fa-cogs" aria-hidden="true"></i></button>
-	<ul class="list-colors">
-    	<h3>Website Skins</h3>
-    	<li>
-            <a href="http://demo.laravelcommerce.com/settheme?theme=app">
-            	<span class="color"></span>
-                <span>Default</span>
-            </a>
-        </li>
-        <li>
-            <a href="http://demo.laravelcommerce.com/settheme?theme=app.theme.1">
-            	<span class="color color-1"></span>
-                <span>Black</span>
-                <span class="color color-1-1"></span>
-                <span>Red</span>
-            </a>
-        </li>
-        <li>
-            <a href="http://demo.laravelcommerce.com/settheme?theme=app.theme.2">
-            	<span class="color color-2"></span>
-                <span>White</span>
-                <span class="color color-2-2"></span>
-                <span>Blue</span>
-            </a>
-        </li>
-        <li>
-            <a href="http://demo.laravelcommerce.com/settheme?theme=app.theme.3">
-            	<span class="color color-3"></span>
-                <span>White</span>
-                <span class="color color-3-3"></span>
-                <span>Parrot</span>
-            </a>
-        </li>
-        <li>
-            <a href="http://demo.laravelcommerce.com/settheme?theme=app.theme.4">
-            	<span class="color color-4"></span>
-                <span>Cyan </span>
-                <span class="color color-4-4"></span>
-                <span>Blue</span>
-            </a>
-        </li>
-        <li>
-            <a href="http://demo.laravelcommerce.com/settheme?theme=app.theme.5">
-            	<span class="color color-5"></span>
-                <span>Brown</span>
-                <span class="color color-5-5"></span>
-                <span>Skin</span>
-            </a>
-        </li>
-        <li>
-            <a href="http://demo.laravelcommerce.com/settheme?theme=app.theme.6">
-            	<span class="color color-6"></span>
-                <span>White</span>
-                <span class="color color-6-6"></span>
-                <span>Yellow</span>
-            </a>
-        </li>
-        <li>
-            <a href="http://demo.laravelcommerce.com/settheme?theme=app.theme.7">
-            	<span class="color color-7"></span>
-                <span>White</span>
-                <span class="color color-7-7"></span>
-                <span>Red</span>
-            </a>
-        </li>
-        <li>
-            <a href="http://demo.laravelcommerce.com/settheme?theme=app.theme.8">
-            	<span class="color color-8"></span>
-                <span>Baby Pink</span>
-                <span class="color color-8-8"></span>
-                <span>Purple</span>
-            </a>
-        </li>
-        <li>
-            <a href="http://demo.laravelcommerce.com/settheme?theme=app.theme.9">
-            	<span class="color color-9"></span>
-                <span>Black</span>
-                <span class="color color-9-9"></span>
-                <span>White</span>
-            </a>
-        </li>
-    </ul>
-</div>
+        <!-- scripts -->
+    <script src="{{ asset('js/app.js.download') }}"></script>
+    <script src="{{ asset('js/jquery-ui.js.download') }}"></script>
 
-<!-- loader content -->
-<div class="loader" id="loader" style="display: none;">
-	<img src="{{ asset('img/ecom/loader.gif') }}">
-</div>
-	<!-- all js scripts including custom js -->
+    <!-- owl carousel -->
+    <script src="{{ asset('js/owl.carousel.js.download') }}"></script>
 
-	<!-- scripts -->
-<script src="{{ asset('js/app.js.download') }}"></script>
-<script src="{{ asset('js/jquery-ui.js.download') }}"></script>
+    <!--- google map-->
+    <script type="text/javascript" src="{{ asset('js/js') }}"></script>
 
-<!-- owl carousel -->
-<script src="{{ asset('js/owl.carousel.js.download') }}"></script>
-
-<!--- google map-->
-<script type="text/javascript" src="{{ asset('js/js') }}"></script>
-
-<!--- one signal-->
+    <!--- one signal-->
 
 
 <script type="application/javascript">
