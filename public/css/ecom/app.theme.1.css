@@ -1369,7 +1369,9 @@ body[dir="ltr"] .breadcum-area {
   margin-bottom: 10px;
 }
 
-.mega-dropdown .mega-dropdown-menu .carousel .carousel-item .fa {
+.mega-dropdown .mega-dropdown-menu .carousel .carousel-item .fa,
+.mega-dropdown .mega-dropdown-menu .carousel .carousel-item .far,
+.mega-dropdown .mega-dropdown-menu .carousel .carousel-item .fab {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2034,7 +2036,9 @@ body[dir="ltr"] .breadcum-area {
   z-index: 9;
 }
 
-.products .product.product-2x .buttons-liked .fa {
+.products .product.product-2x .buttons-liked .fa,
+.products .product.product-2x .buttons-liked .far,
+.products .product.product-2x .buttons-liked .fab {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2056,7 +2060,9 @@ body[dir="ltr"] .breadcum-area {
   cursor: pointer;
 }
 
-.products .product.product-2x .buttons-liked .fa:hover {
+.products .product.product-2x .buttons-liked .fa:hover,
+.products .product.product-2x .buttons-liked .far:hover,
+.products .product.product-2x .buttons-liked .fab:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
@@ -2415,7 +2421,9 @@ body[dir="ltr"] .breadcum-area {
   height: 80%;
 }
 
-.product article .product-hover .icons .fa {
+.product article .product-hover .icons .fa,
+.product article .product-hover .icons .far,
+.product article .product-hover .icons .fab {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2437,7 +2445,9 @@ body[dir="ltr"] .breadcum-area {
   cursor: pointer;
 }
 
-.product article .product-hover .icons .fa:hover {
+.product article .product-hover .icons .fa:hover,
+.product article .product-hover .icons .far:hover,
+.product article .product-hover .icons .fab:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
@@ -2445,7 +2455,9 @@ body[dir="ltr"] .breadcum-area {
   position: relative;
 }
 
-.product article .product-hover .icons .icon-liked .fa {
+.product article .product-hover .icons .icon-liked .fa,
+.product article .product-hover .icons .icon-liked .far,
+.product article .product-hover .icons .icon-liked .fab {
   color: #ea2f4c;
 }
 
