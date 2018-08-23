@@ -15,6 +15,6 @@ class TestController extends Controller
     {
         //$products = Product::where('featured', true)->take(8)->inRandomOrder()->get();
 
-        return view('index2');
+        return view('index3');
     }
 }
