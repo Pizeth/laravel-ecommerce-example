@@ -54,7 +54,32 @@
                         </div>
                         <div aria-labelledby="featured-tab" class="tab-pane fade show active" id="featured" role="tabpanel">
                             <div class="owl-carousel owl_featured" id="owl_featured">
-                                <div class="product">
+                                @foreach ($products as $product)
+                                    <div class="product">
+                                        <article>
+                                            <div class="thumb"> 
+                                                <img class="img-fluid" src="{{ productImage($product->image) }}" alt="{{ $product->name }}">
+                                            </div>
+                                            <span class="tag text-center">Men's Clothing</span>
+                                            <h2 class="title text-center">{{ $product->name }}</h2>
+                                            <div class="price text-center">{{ $product->presentPrice() }}</div>
+                                            <div class="product-hover">
+                                                <div class="icons">
+                                                    <div class="icon-liked">
+                                                        <span products_id="1" class="far fa-heart  is_liked">
+                                                            <span class="badge badge-secondary">8</span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="{{ route('shop.show', $product->slug) }}" class="fa fa-eye"></a>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-block btn-secondary cart" products_id="1">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                @endforeach
+                                <!-- <div class="product">
                                     <article>
                                         <div class="thumb"> 
                                             <img class="img-fluid" src="{{ asset('img/ecom/1502174889.pPOLO2-26314766_standard_v400.jpg') }}" alt="CLASSIC FIT SOFT-TOUCH POLO">
@@ -330,7 +355,7 @@
                                             </div>
                                         </div>
                                     </article>
-                                </div>
+                                </div> -->
                                 <div class="product last-product">
                                     <article>
                                         <a href="http://demo.laravelcommerce.com/shop?type=topseller" class="buttons">
@@ -353,7 +378,32 @@
                         </div>
                         <div aria-labelledby="special-tab" class="tab-pane fade" id="special" role="tabpanel">
                             <div class="owl-carousel" id="owl_special">
-                                <div class="product">
+                                @foreach ($products as $product)
+                                    <div class="product">
+                                        <article>
+                                            <div class="thumb"> 
+                                                <img class="img-fluid" src="{{ productImage($product->image) }}" alt="{{ $product->name }}">
+                                            </div>
+                                            <span class="tag text-center">Men's Clothing</span>
+                                            <h2 class="title text-center">{{ $product->name }}</h2>
+                                            <div class="price text-center">{{ $product->presentPrice() }}</div>
+                                            <div class="product-hover">
+                                                <div class="icons">
+                                                    <div class="icon-liked">
+                                                        <span products_id="1" class="far fa-heart  is_liked">
+                                                            <span class="badge badge-secondary">8</span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="{{ route('shop.show', $product->slug) }}" class="fa fa-eye"></a>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-block btn-secondary cart" products_id="1">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                @endforeach                            
+                                <!-- <div class="product">
                                     <article>
                                         <div class="thumb">
                                             <img class="img-fluid" src="{{ asset('img/ecom/1502366586.pPOLO2-25834797_standard_v400.jpg') }}" alt="FLAG COMBED COTTON SWEATER">
@@ -649,7 +699,7 @@
                                             </div>
                                         </div>
                                     </article>
-                                </div>
+                                </div> -->
                                 <div class="product last-product">
                                     <article>
                                         <a href="http://demo.laravelcommerce.com/shop?type=special" class="buttons">
@@ -672,7 +722,32 @@
                         </div>
                         <div aria-labelledby="liked-tab" class="tab-pane fade" id="liked" role="tabpanel">
                             <div class="owl-carousel" id="owl_liked">
-                                <div class="product">
+                                @foreach ($products as $product)
+                                    <div class="product">
+                                        <article>
+                                            <div class="thumb"> 
+                                                <img class="img-fluid" src="{{ productImage($product->image) }}" alt="{{ $product->name }}">
+                                            </div>
+                                            <span class="tag text-center">Men's Clothing</span>
+                                            <h2 class="title text-center">{{ $product->name }}</h2>
+                                            <div class="price text-center">{{ $product->presentPrice() }}</div>
+                                            <div class="product-hover">
+                                                <div class="icons">
+                                                    <div class="icon-liked">
+                                                        <span products_id="1" class="far fa-heart  is_liked">
+                                                            <span class="badge badge-secondary">8</span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="{{ route('shop.show', $product->slug) }}" class="fa fa-eye"></a>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-block btn-secondary cart" products_id="1">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                @endforeach                             
+                                <!-- <div class="product">
                                     <article>
                                         <div class="thumb">
                                             <img class="img-fluid" src="{{ asset('img/ecom/1502174889.pPOLO2-26314766_standard_v400.jpg') }}" alt="CLASSIC FIT SOFT-TOUCH POLO">
@@ -949,7 +1024,7 @@
                                             </div>
                                         </div>
                                     </article>
-                                </div>
+                                </div> -->
                                 <div class="product last-product">
                                     <article>
                                         <a href="http://demo.laravelcommerce.com/shop?type=mostliked" class="buttons">

@@ -2301,9 +2301,9 @@ body[dir="ltr"] .breadcum-area {
   text-align: center;
 }
 
-.product article .thumb img {
+/* .product article .thumb img {
   height: 100%;
-}
+} */
 
 .product article .new-tag, .product article .discount-tag {
   background-color: #28a745;

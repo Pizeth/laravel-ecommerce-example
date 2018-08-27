@@ -3,6 +3,7 @@
     <head>
         @include('includes.head')
         @yield('extra-css')
+        @yield('custom-script')
     </head>
     <body dir="ltr">
         <!-- header -->
