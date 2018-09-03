@@ -7,7 +7,7 @@
                         <h3 class="fas fa-shipping-fast"></h3>
                         <div class="block">
                             <h4 class="title">Free Shipping</h4>
-                            <p>On order over $99</p>
+                            <p>On order over $10</p>
                         </div>
                     </div>
                 </div>
@@ -29,7 +29,7 @@
                         <h3 class="far fa-life-ring"></h3>
                         <div class="block">
                             <h4 class="title">Support 24/7</h4>
-                            <p>Hotline&nbsp;:&nbsp;+92 312 1234567</p>
+                            <p>Hotline&nbsp;:&nbsp;+855 12 345 678</p>
                         </div>
                     </div>
                 </div>

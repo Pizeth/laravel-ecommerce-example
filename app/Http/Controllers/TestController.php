@@ -16,6 +16,6 @@ class TestController extends Controller
     {
         //$products = Product::where('featured', true)->take(8)->inRandomOrder()->get();
         $products = Product::where('featured', true)->take(8)->inRandomOrder()->get();
-        return view('test-product')->with('products', $products);
+        return view('index3')->with('products', $products);
     }
 }

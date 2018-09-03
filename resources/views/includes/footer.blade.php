@@ -7,7 +7,7 @@
             </div>
             <div class="footer-info col-12 col-md-6">
                 <p> 
-                    © 2017 Company, Inc. <a href="http://demo.laravelcommerce.com/#">Privacy</a> 
+                    © 2018 Company, Inc. <a href="http://demo.laravelcommerce.com/#">Privacy</a> 
                     · <a href="http://demo.laravelcommerce.com/#">Terms</a> 
                 </p>
             </div>

@@ -3,7 +3,7 @@
         <div class="row align-items-center">
             <div class="col-12 col-sm-12 col-lg-3 spaceright-0">
                 <a href="http://demo.laravelcommerce.com/" class="logo">
-                    <strong>E</strong>COMMERCE
+                    <strong>Digi</strong>Cambo
                 </a>
             </div>
             <div class="col-12 col-sm-7 col-md-8 col-lg-6 px-0">      
