@@ -200,7 +200,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item"> <a class="nav-link" href="http://demo.laravelcommerce.com/contact-us">Contact Us</a> </li>
-                            <li class="nav-item last"><a class="nav-link"><span>Hotline</span>(+92 312 1234567)</a></li>
+                            <li class="nav-item last"><a class="nav-link"><span>Hotline</span><i class="fa fa-phone fa-flip-horizontal"></i> (+855 12 345 678)</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -398,7 +398,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item"> <a class="nav-link" href="http://demo.laravelcommerce.com/contact-us">Contact Us</a> </li>
-                            <li class="nav-item last"><a class="nav-link"><span>Hotline</span>(+92 312 1234567)</a></li>
+                            <li class="nav-item last"><a class="nav-link"><span>Hotline</span>(+855 12 345 678)</a></li>
                         </ul>
                     </div>
                 </nav>

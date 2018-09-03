@@ -6,8 +6,8 @@
                     <h5>About Store</h5>
                     <ul class="contact-list  pl-0 mb-0">
                         <li> <i class="fas fa-map-marker-alt"></i><span>address City State, Zip Country</span> </li>
-                        <li> <i class="fa fa-phone fa-flip-horizontal"></i><span>+92 312 1234567</span> </li>
-                        <li> <i class="fa fa-envelope"></i><span> <a href="mailto:sales@brandbychoice.com">vectorcoder@gmail.com</a> </span> </li>
+                        <li> <i class="fa fa-phone fa-flip-horizontal"></i><span>+855 12 345 678</span> </li>
+                        <li> <i class="fa fa-envelope"></i><span> <a href="mailto:sales@brandbychoice.com">digicambo@gmail.com</a> </span> </li>
                     </ul>
                 </div>
             </div>
