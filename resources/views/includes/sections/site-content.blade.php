@@ -60,7 +60,7 @@
                                             <div class="thumb"> 
                                                 <img class="img-fluid" src="{{ productImage($product->image) }}" alt="{{ $product->name }}">
                                             </div>
-                                            <span class="tag text-center">Men's Clothing</span>
+                                            <span class="tag text-center">Men's Clothing</span> {{ $product->image }}
                                             <h2 class="title text-center">{{ $product->name }}</h2>
                                             <div class="price text-center">{{ $product->presentPrice() }}</div>
                                             <div class="product-hover">

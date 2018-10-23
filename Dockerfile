@@ -1,16 +1,4 @@
-# FROM php:7.1.21-fpm
-# RUN apt-get update && apt-get install -y libmcrypt-dev openssl zip unzip git \
-#     mysql-client libmagickwand-dev --no-install-recommends \
-#     && pecl install imagick \
-#     && docker-php-ext-enable imagick \
-#     && docker-php-ext-install mcrypt pdo_mysql
-
-FROM php:7.1.21-fpm
-RUN apt-get update && apt-get install -y libmcrypt-dev openssl zip unzip git \
-    mysql-client libmagickwand-dev --no-install-recommends \
-    && pecl install imagick \
-    && docker-php-ext-enable imagick \
-    && docker-php-ext-install mcrypt pdo_mysql gd
+FROM shakyshane/laravel-php:latest
 
 COPY composer.lock composer.json /var/www/
 
@@ -29,4 +17,6 @@ COPY . /var/www
 
 RUN chown -R www-data:www-data \
         /var/www/storage \
-        /var/www/bootstrap/cache       
+        /var/www/bootstrap/cache
+
+RUN php artisan optimize

@@ -1,42 +1,40 @@
 version: '2'
 services:
-
-  # The Application
+  #  The Application
   app:
-    build:
-      context: ./
-      dockerfile: app.dockerfile
+    image: razeth/digicambo-app
     working_dir: /var/www
     volumes:
-      - ./:/var/www
+      - /var/www/storage
+    env_file: '.env'
     environment:
-      - "DB_PORT=3306"
       - "DB_HOST=database"
-
+      - "REDIS_HOST=cache"
   # The Web Server
   web:
-    build:
-      context: ./
-      dockerfile: web.dockerfile
+    image: razeth/digicambo-web
     working_dir: /var/www
     volumes_from:
-      - app
+      - app    
+    # volumes:
+    #   - "${LE_DIR}:/etc/letsencrypt"
     ports:
       - 80:80
-
+      # - 443:443
   # The Database
   database:
-    image: mysql:latest
+    image: mysql:5.7
     volumes:
       - dbdata:/var/lib/mysql
     environment:
       - "MYSQL_DATABASE=digicambo"
       - "MYSQL_USER=razeth"
-      - "MYSQL_PASSWORD=digicambo"
+      - "MYSQL_PASSWORD=Cocacola1!"
       - "MYSQL_ROOT_PASSWORD=cocacola"
-    ports:
-        - "33061:3306"
     command: --disable-partition-engine-check
+  # redis
+  cache:
+    image: redis:3.0-alpine
 
 volumes:
   dbdata:
