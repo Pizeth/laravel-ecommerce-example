@@ -2,12 +2,12 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-12 col-sm-12 col-lg-3 spaceright-0">
-                <a href="http://demo.laravelcommerce.com/" class="logo">
+                <a href="http://www.digicambo.com" class="logo">
                     <strong>Digi</strong>Cambo
                 </a>
             </div>
             <div class="col-12 col-sm-7 col-md-8 col-lg-6 px-0">      
-                <form class="form-inline" action="http://demo.laravelcommerce.com/shop" method="get">
+                <form class="form-inline" action="http://www.digicambo.com/shop" method="get">
                     <div class="search-categories">
                         <select id="category_id" name="category">
                             <option value="all">All Categories</option>     
@@ -53,7 +53,7 @@
             <div class="col-12 col-sm-5 col-md-4 col-lg-3 spaceleft-0">
                 <ul class="top-right-list">
                     <li class="wishlist-header">
-                        <a href="http://demo.laravelcommerce.com/wishlist">
+                        <a href="http://www.digicambo.com/wishlist">
                             <span class="badge badge-secondary" id="wishlist-count">0</span>
                             <span class="fa-stack fa-lg">
                             <i class="fa fa-shopping-bag fa-stack-2x"></i>
@@ -62,7 +62,7 @@
                         </a>
                     </li>
                     <li class="cart-header dropdown head-cart-content">
-                        <a href="http://demo.laravelcommerce.com/#" id="dropdownMenuButton" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a href="http://www.digicambo.com/#" id="dropdownMenuButton" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="badge badge-secondary">0</span>
                             <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
                             <!--<img class="img-fluid" src="http://demo.laravelcommerce.com/public/images/shopping_cart.png') }}" alt="icon">-->

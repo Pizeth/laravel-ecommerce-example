@@ -16,11 +16,11 @@
                     <div class="single-footer">
                         <h5>Our Services</h5>
                         <ul class="links-list pl-0 mb-0">
-                            <li> <a href="http://demo.laravelcommerce.com/"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Home</a> </li>
-                            <li> <a href="http://demo.laravelcommerce.com/shop"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Shop</a> </li>
-                            <li> <a href="http://demo.laravelcommerce.com/orders"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Orders</a> </li>
-                            <li> <a href="http://demo.laravelcommerce.com/viewcart"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Shopping Cart</a> </li>            
-                            <li> <a href="http://demo.laravelcommerce.com/wishlist"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Wishlist</a> </li>
+                            <li> <a href="http://www.digicambo.com/"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Home</a> </li>
+                            <li> <a href="http://www.digicambo.com/shop"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Shop</a> </li>
+                            <li> <a href="http://www.digicambo.com/orders"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Orders</a> </li>
+                            <li> <a href="http://www.digicambo.com/viewcart"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Shopping Cart</a> </li>            
+                            <li> <a href="http://www.digicambo.com/wishlist"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Wishlist</a> </li>
                         </ul>
                     </div>
                     <div class="single-footer">

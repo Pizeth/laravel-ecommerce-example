@@ -6,12 +6,12 @@
                     <div class="collapse navbar-collapse" id="navbar_collapse_1">
                         <ul class="navbar-nav">
                             <li class="nav-item first">
-                                <a href="http://demo.laravelcommerce.com/" class="nav-link">
+                                <a href="http://www.digicambo.com" class="nav-link">
                                     <i class="fa fa-home"></i>
                                 </a>
                             </li>
                             <li class="nav-item dropdown open">
-                                <a class="nav-link dropdown-toggle" href="http://demo.laravelcommerce.com/">Home Pages</a>
+                                <a class="nav-link dropdown-toggle" href="http://www.digicambo.com">Home Pages</a>
                                 <ul class="dropdown-menu">
                                     <li> <a class="dropdown-item" href="http://demo.laravelcommerce.com/setStyle?style=one">Home Page 1</a> </li>
                                     <li> <a class="dropdown-item" href="http://demo.laravelcommerce.com/setStyle?style=two">Home Page 2</a> </li>
